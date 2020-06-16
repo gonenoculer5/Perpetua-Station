@@ -98,3 +98,8 @@ Name = CouncilMember
 Include = EVERYTHING
 Exclude =
 Edit = EVERYTHING
+
+Name = Maintainer
+Include = @ DEBUG SERVER SOUND POLL VAREDIT SPAWN
+Exclude =
+Edit =
