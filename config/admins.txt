@@ -15,5 +15,6 @@ FatCat919 = Moderator
 AtlasRules87 = Moderator
 SgtHunk = Admin
 EZBAKEANNEFRANKE = Admin
+Doxddd = Headmin
 
 # the rest are in the db
