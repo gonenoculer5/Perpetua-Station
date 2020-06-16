@@ -365,6 +365,9 @@ RANDOM_LAWS asimovpp
 RANDOM_LAWS paladin
 RANDOM_LAWS robocop
 RANDOM_LAWS corporate
+RANDOM_LAWS nanotrasen
+RANDOM_LAWS minerbot
+RANDOM_LAWS democracy
 
 ## Quirky laws. Shouldn't cause too much harm
 #RANDOM_LAWS hippocratic
@@ -374,6 +377,9 @@ RANDOM_LAWS corporate
 #RANDOM_LAWS peacekeeper
 #RANDOM_LAWS reporter
 #RANDOM_LAWS hulkamania
+#RANDOM_LAWS power
+#RANDOM_LAWS skynet
+#RANDOM_LAWS tyrantai
 
 ## Bad idea laws. Probably shouldn't enable these
 #RANDOM_LAWS syndie
@@ -381,6 +387,8 @@ RANDOM_LAWS corporate
 #RANDOM_LAWS antimov
 #RANDOM_LAWS thermodynamic
 #RANDOM_LAWS ratvar
+#RANDOM_LAWS clown
+#RANDOM_LAWS boomer
 
 ## meme laws. Honk
 #RANDOM_LAWS buildawall
