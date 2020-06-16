@@ -667,6 +667,6 @@ AI MODULES
 	law_id = "catsimov"
 
 /*************Clown*****************/
-/obj/item/aiModule/core/full/skynet
+/obj/item/aiModule/core/full/clown
 	name = "'Clown' Core AI Module"
 	law_id = "clown"
