@@ -76,6 +76,17 @@
 	lathe_time_factor = 0.2
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
 
+/datum/design/beaker_of_holding
+	name = "Beaker of Holding"
+	desc = "A beaker containing a localized bluespace pocket. Capable of holding an astounding 750 units."
+	id = "beaker_of_holding"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 10000, /datum/material/glass = 5000, /datum/material/plasma = 5000, /datum/material/diamond = 2500, /datum/material/bluespace = 2500)
+	build_path = /obj/item/reagent_containers/glass/beaker/beaker_of_holding
+	category = list("Medical Designs")
+	lathe_time_factor = 0.5
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_ENGINEERING | DEPARTMENTAL_FLAG_SCIENCE
+
 //T5 PARTS TECHWEB [XEON/FULP]
 /datum/techweb_node/quantum_tech
 	id = "quantum_tech"
@@ -87,13 +98,23 @@
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 	export_price = 5000
 
+/datum/techweb_node/beaker_of_holding
+	id = "beaker_holding_tech"
+	starting_node = FALSE
+	display_name = "Beaker of Holding"
+	description = "We're really pushing the limits of chemistry here."
+	design_ids = list("beaker_of_holding")
+	prereq_ids = list("bluespace_storage")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+	export_price = 5000
+
 //T5 OBJECT [XEON/FULP]
 
 /obj/item/stock_parts/capacitor/quantumcap
 	name = "Quantum Capacitor"
 	desc = "A capacitor engineered with a mix of bluespace and quantum technologies."
 	icon_state = "quantumcap"
-	icon = 'icons/Fulpicons/quantumcell_fulp.dmi'
+	icon = 'icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
 	custom_materials = list(/datum/material/iron =225, /datum/material/glass =180, /datum/material/gold =135, /datum/material/diamond = 90)
 
@@ -101,7 +122,7 @@
 	name = "quantum field scanning module"
 	desc = "A special scanning module using a mix of bluespace and quantum tech to scan even sub-atomic materials."
 	icon_state = "quantumscan"
-	icon = 'icons/Fulpicons/quantumcell_fulp.dmi'
+	icon = 'icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
 	custom_materials = list(/datum/material/iron= 225, /datum/material/glass = 180, /datum/material/diamond = 54, /datum/material/bluespace = 54)
 
@@ -109,7 +130,7 @@
 	name = "quantum field manipulator"
 	desc = "A strange, almost intangible manipulator that uses bluespace tech to manipulate and fold quantum states."
 	icon_state = "quantummanip"
-	icon = 'icons/Fulpicons/quantumcell_fulp.dmi'
+	icon = 'icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
 	custom_materials = list(/datum/material/iron= 180, /datum/material/diamond = 27, /datum/material/titanium = 27, /datum/material/uranium = 27)
 
@@ -117,7 +138,7 @@
 	name = "quantum micro-laser"
 	desc = "A modified quadultra micro-laser designed to make use of newly discovered quantum tech."
 	icon_state = "quantumlaser"
-	icon = 'icons/Fulpicons/quantumcell_fulp.dmi'
+	icon = 'icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
 	custom_materials = list(/datum/material/iron= 180, /datum/material/glass = 180, /datum/material/uranium = 90, /datum/material/diamond = 90)
 
@@ -125,7 +146,7 @@
 	name = "quantum entangled matter bin"
 	desc = "A bluespace matter bin that makes use of entangled particles to store states of materials as energy."
 	icon_state = "quantumbin"
-	icon = 'icons/Fulpicons/quantumcell_fulp.dmi'
+	icon = 'icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
 	custom_materials = list(/datum/material/iron= 225, /datum/material/diamond = 90, /datum/material/bluespace = 135)
 
@@ -133,7 +154,7 @@
 	name = "quantum entangled beaker"
 	desc = "A quantum entangled beaker, capable of holding a massive 400 units of any reagent."
 	icon_state = "quantumbeaker"
-	icon = 'icons/Fulpicons/quantumcell_fulp.dmi'
+	icon = 'icons/PerpIcons/quantumcell_fulp.dmi'
 	custom_materials = list(/datum/material/iron = 500, /datum/material/glass = 5000, /datum/material/plasma = 3000, /datum/material/diamond = 1500, /datum/material/bluespace = 1500)
 	volume = 400
 	amount_per_transfer_from_this = 10
@@ -143,7 +164,7 @@
 	name = "quantum power cell"
 	desc = "A rechargeable, entangled power cell."
 	icon_state = "quantumcell"
-	icon = 'icons/Fulpicons/quantumcell_fulp.dmi'
+	icon = 'icons/PerpIcons/quantumcell_fulp.dmi'
 	maxcharge = 50000
 	custom_materials = list(/datum/material/iron = 1000, /datum/material/glass = 5500, /datum/material/plasma = 3500, /datum/material/diamond = 1000, /datum/material/bluespace = 1000)
 	chargerate = 5000
@@ -152,6 +173,16 @@
 	. = ..()
 	charge = 0
 	update_icon()
+
+/obj/item/reagent_containers/glass/beaker/beaker_of_holding
+	name = "Beaker of Holding"
+	desc = "A beaker containing a localized bluespace pocket. Capable of holding an astounding 750 units."
+	icon_state = "beakerofholding"
+	icon = 'icons/PerpIcons/beakerofholding.dmi'
+	custom_materials = list(/datum/material/iron = 10000, /datum/material/glass = 5000, /datum/material/plasma = 5000, /datum/material/diamond = 2500, /datum/material/bluespace = 2500)
+	volume = 750
+	amount_per_transfer_from_this = 10
+	possible_transfer_amounts = list(5,10,15,20,25,30,50,100,300,500,1000)
 
 ///T5 RPED
 /obj/item/storage/part_replacer/bluespace/tier5

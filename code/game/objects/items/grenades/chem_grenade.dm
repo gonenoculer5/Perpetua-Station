@@ -8,7 +8,7 @@
 	var/stage = GRENADE_EMPTY
 	var/list/obj/item/reagent_containers/glass/beakers = list()
 	var/list/allowed_containers = list(/obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/waterbottle)
-	var/list/banned_containers = list(/obj/item/reagent_containers/glass/beaker/bluespace) //Containers to exclude from specific grenade subtypes
+	var/list/banned_containers = list(/obj/item/reagent_containers/glass/beaker/bluespace, /obj/item/reagent_containers/glass/beaker/beaker_of_holding) //Containers to exclude from specific grenade subtypes
 	var/affected_area = 3
 	var/ignition_temp = 10 // The amount of heat added to the reagents when this grenade goes off.
 	var/threatscale = 1 // Used by advanced grenades to make them slightly more worthy.
