@@ -10,7 +10,7 @@
 # and will override any duplicate entries in the database.									  #
 ###############################################################################################
 gonenoculer5 = Host
-sintyz = Maintainer
+Sintyz = Maintainer
 FatCat919 = Moderator
 AtlasRules87 = Moderator
 SgtHunk = Admin
