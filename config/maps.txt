@@ -18,7 +18,7 @@ map boxstation
 endmap
 
 map elysianstation
-	maxplayers 100
+	maxplayers 50
 	votable
 endmap
 
