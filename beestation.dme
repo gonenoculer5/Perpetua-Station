@@ -3057,11 +3057,11 @@
 #include "code\modules\vending\youtool.dm"
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
-#include "code\PerpetuaCode\t5_parts.dm"
 #include "interface\interface.dm"
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "perpstation\code\ported\t5_parts.dm"
 // END_INCLUDE
 
 // BEGIN_AUSTATION_INCLUDES
