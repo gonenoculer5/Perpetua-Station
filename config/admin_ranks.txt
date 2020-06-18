@@ -99,7 +99,7 @@ Include = EVERYTHING
 Exclude =
 Edit = EVERYTHING
 
-Name = Head Maintainer
+Name = Head-Maintainer
 Include = ADMIN DEBUG SERVER SOUND POLL VAREDIT SPAWN
 Exclude =
 Edit =
