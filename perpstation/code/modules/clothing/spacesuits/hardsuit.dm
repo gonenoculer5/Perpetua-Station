@@ -1,23 +1,8 @@
-//assistant ops suit
-
-/obj/item/clothing/suit/space/hardsuit/assistant
-	name = "Grey hard suit"
-	desc = "Err, totally not Syndicate property painted grey, promise!"
-	alt_desc = "A dual-mode advanced hardsuit designed for work in special operations. It is in combat mode. Property of Gorlex Marauders."
-	icon_state = "hardsuit1-syndi"
-	item_state = "syndie_hardsuit"
-	hardsuit_type = "syndi"
-	w_class = WEIGHT_CLASS_NORMAL
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
-	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/transforming/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi
-	jetpack = /obj/item/tank/jetpack/suit
-	cell = /obj/item/stock_parts/cell/hyper
-
 //Assistant
 
 
 /obj/item/clothing/head/helmet/space/hardsuit/assistant
+    icon = 'perpstation/icons/mob/clothing/head.dmi'
 	name = "Assistant hardsuit helmet"
 	desc = "Err, totally not Syndicate property painted grey, promise!"
 	icon_state = "helmetforassistant"
@@ -28,6 +13,7 @@
 
 
 /obj/item/clothing/suit/space/hardsuit/assistant
+    icon = 'perpstation/icons/mob/clothing/suit.dmi'
 	icon_state = "assistanthardsuit"
 	item_state = "assistanthardsuit"
 	hardsuit_type = "assistant"
@@ -42,6 +28,7 @@
 //Elite assistant
 
 /obj/item/clothing/head/helmet/space/hardsuit/eliteassistant
+    icon = 'perpstation/icons/mob/clothing/head.dmi'
 	name = "Elite Assistant hardsuit helmet"
 	desc = "Err, totally not Syndicate property painted grey, promise!"
 	icon_state = "elitehelmet"
@@ -52,6 +39,7 @@
 
 
 /obj/item/clothing/suit/space/hardsuit/eliteassistant
+    icon = 'perpstation/icons/mob/clothing/suit.dmi'
 	icon_state = "eliteassistant"
 	item_state = "eliteassistant"
 	hardsuit_type = "eliteassistant"
