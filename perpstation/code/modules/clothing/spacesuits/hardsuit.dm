@@ -13,7 +13,7 @@
 
 
 /obj/item/clothing/suit/space/hardsuit/assistant
-    name = "Assistant hardsuit"
+	name = "Assistant hardsuit"
 	desc = "Err, totally not Syndicate property painted grey, promise!"
 	icon = 'perpstation/icons/mob/clothing/suit.dmi'
 	icon_state = "assistanthardsuit"
