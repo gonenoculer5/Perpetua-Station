@@ -1,7 +1,7 @@
 /obj/item/clothing/under/syndicate/assistantop
 	name = "assistant combat jumpsuit"
 	desc = "The classic jumpsuit, but beefed up."
-    icon = 'perpstation/icons/mob/clothing/under/syndicate.dmi'
+	icon = 'perpstation/icons/mob/clothing/under/syndicate.dmi'
 	icon_state = "grey"
 	item_state = "gy_suit"
 	has_sensor = NO_SENSORS
@@ -11,7 +11,7 @@
 /obj/item/clothing/under/syndicate/assistantop/skirt
 	name = "assistant combat jumpskirt"
 	desc = "The classic jumpsuit, but beefed up."
-    icon = 'perpstation/icons/mob/clothing/under/syndicate.dmi'
+	icon = 'perpstation/icons/mob/clothing/under/syndicate.dmi'
 	icon_state = "grey_skirt"
 	item_state = "gy_suit"
 	has_sensor = NO_SENSORS
