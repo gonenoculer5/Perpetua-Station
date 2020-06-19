@@ -116,7 +116,7 @@
 	icon_state = "quantumcap"
 	icon = 'perpstation/icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
-	custom_materials = list(/datum/material/iron =225, /datum/material/glass =180, /datum/material/gold =135, /datum/material/diamond = 90)
+	materials = list(/datum/material/iron =225, /datum/material/glass =180, /datum/material/gold =135, /datum/material/diamond = 90)
 
 /obj/item/stock_parts/scanning_module/quantumscan
 	name = "quantum field scanning module"
@@ -124,7 +124,7 @@
 	icon_state = "quantumscan"
 	icon = 'perpstation/icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
-	custom_materials = list(/datum/material/iron= 225, /datum/material/glass = 180, /datum/material/diamond = 54, /datum/material/bluespace = 54)
+	materials = list(/datum/material/iron= 225, /datum/material/glass = 180, /datum/material/diamond = 54, /datum/material/bluespace = 54)
 
 /obj/item/stock_parts/manipulator/quantummanip
 	name = "quantum field manipulator"
@@ -132,7 +132,7 @@
 	icon_state = "quantummanip"
 	icon = 'perpstation/icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
-	custom_materials = list(/datum/material/iron= 180, /datum/material/diamond = 27, /datum/material/titanium = 27, /datum/material/uranium = 27)
+	materials = list(/datum/material/iron= 180, /datum/material/diamond = 27, /datum/material/titanium = 27, /datum/material/uranium = 27)
 
 /obj/item/stock_parts/micro_laser/quantumlaser
 	name = "quantum micro-laser"
@@ -140,7 +140,7 @@
 	icon_state = "quantumlaser"
 	icon = 'perpstation/icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
-	custom_materials = list(/datum/material/iron= 180, /datum/material/glass = 180, /datum/material/uranium = 90, /datum/material/diamond = 90)
+	materials = list(/datum/material/iron= 180, /datum/material/glass = 180, /datum/material/uranium = 90, /datum/material/diamond = 90)
 
 /obj/item/stock_parts/matter_bin/quantumbin
 	name = "quantum entangled matter bin"
@@ -148,7 +148,7 @@
 	icon_state = "quantumbin"
 	icon = 'perpstation/icons/PerpIcons/quantumcell_fulp.dmi'
 	rating = 5
-	custom_materials = list(/datum/material/iron= 225, /datum/material/diamond = 90, /datum/material/bluespace = 135)
+	materials = list(/datum/material/iron= 225, /datum/material/diamond = 90, /datum/material/bluespace = 135)
 
 /obj/item/reagent_containers/glass/beaker/quantum
 	name = "quantum entangled beaker"
@@ -166,7 +166,7 @@
 	icon_state = "quantumcell"
 	icon = 'perpstation/icons/PerpIcons/quantumcell_fulp.dmi'
 	maxcharge = 50000
-	custom_materials = list(/datum/material/iron = 1000, /datum/material/glass = 5500, /datum/material/plasma = 3500, /datum/material/diamond = 1000, /datum/material/bluespace = 1000)
+	materials = list(/datum/material/iron = 1000, /datum/material/glass = 5500, /datum/material/plasma = 3500, /datum/material/diamond = 1000, /datum/material/bluespace = 1000)
 	chargerate = 5000
 
 /obj/item/stock_parts/cell/quantum/empty/Initialize()
