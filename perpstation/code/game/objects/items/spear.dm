@@ -10,9 +10,20 @@
 	hitsound = 'sound/weapons/blade1.ogg'
 	force=20
 
-/obj/item/spear/espear/ComponentInitialize()
+/obj/item/twohanded/spear/espear/Initialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=30, icon_wielded="[icon_prefix]1")
+	AddComponent(/datum/component/butchering, 100, 70) //decent in a pinch, but pretty bad.
+
+/obj/item/twohanded/spear/espear/suicide_act(mob/living/carbon/user)
+	user.visible_message("<span class='suicide'>[user] begins to sword-swallow \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+	return BRUTELOSS
+
+/obj/item/twohanded/spear/espear/Initialize()
+	. = ..()
+	AddComponent(/datum/component/jousting)
+
+/obj/item/twohanded/spear/espear/update_icon()
+	icon_state = "[icon_prefix][wielded]"
 
 /obj/item/spear/espear/afterattack(atom/movable/AM, mob/living/user, proximity)
 	. = ..()

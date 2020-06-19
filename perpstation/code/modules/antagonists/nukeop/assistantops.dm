@@ -9,7 +9,6 @@
 	roundend_category = "assistant operatives"
 	antagpanel_category = "AssistantOp"
 	nukeop_outfit = /datum/outfit/syndicate/assistantop/leader
-	challengeitem = /obj/item/nuclear_challenge/assistantop
 
 /datum/antagonist/nukeop/leader/assistanopt/give_alias()
 	title = pick("Greytide McGee", "Assistant Assistant", "Dorms King", "Unknown")

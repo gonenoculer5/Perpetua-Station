@@ -8,7 +8,7 @@
 /datum/uplink_item/dangerous/spear
 	name = "Grey tide spear"
 	desc = "Use this weapon to impale those dirty security officers in style!"
-	item = /obj/item/spear/grey_tide
+	item = /obj/item/twohanded/spear/grey_tide
 	cost = 1
 	include_modes = list(/datum/game_mode/nuclear/assistant_ops)
 

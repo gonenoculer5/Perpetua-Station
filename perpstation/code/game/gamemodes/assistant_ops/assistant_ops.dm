@@ -40,8 +40,7 @@
 	l_pocket = /obj/item/pinpointer/nuke/syndicate
 	r_pocket = /obj/item/storage/toolbox/greytide
 	id = /obj/item/card/id/syndicate
-	backpack_contents = list(/obj/item/storage/box/survival/syndie=1,
-		/obj/item/kitchen/knife/combat/survival,
+	backpack_contents = list(/obj/item/kitchen/knife/combat/survival,
 		/obj/item/crowbar/power)
 	uplink_type = /obj/item/uplink/assistantop
 
