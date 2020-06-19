@@ -22,15 +22,14 @@
 			continue
 		H.Stun(10)
 		var/obj/item/clothing/C
-			if(!H.w_uniform || H.dropItemToGround(H.w_uniform))
+		if(!H.w_uniform || H.dropItemToGround(H.w_uniform))
 			C = new /obj/item/clothing/under/color/grey(H)
-			H.equip_to_slot_or_del(C, ITEM_SLOT_ICLOTHING)
+			H.equip_to_slot_or_del(C, SLOT_W_UNIFORM)
 
 		if(!H.shoes || H.dropItemToGround(H.shoes))
 			C = new /obj/item/clothing/shoes/sneakers/black(H)
-			H.equip_to_slot_or_del(C, ITEM_SLOT_FEET)
+			H.equip_to_slot_or_del(C, SLOT_SHOES)
 
 		if(!H.wear_mask || H.dropItemToGround(H.wear_mask))
 			C = new /obj/item/clothing/mask/gas(H)
-			H.equip_to_slot_or_del(C, ITEM_SLOT_MASK)
-
+			H.equip_to_slot_or_del(C, SLOT_WEAR_MASK)

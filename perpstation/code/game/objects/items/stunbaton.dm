@@ -12,4 +12,3 @@
 	hitcost = 2000
 	throw_hit_chance = 100
 	slot_flags = ITEM_SLOT_BACK
-	var/obj/item/assembly/igniter/sparkler = 0
