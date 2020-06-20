@@ -3,14 +3,14 @@
 /obj/item/melee/transforming/energy/sword/greytide
 	name = "energy toolbox"
 	desc = "What could possibly go wrong?"
+	icon = '/perpstation/icons/obj/transforming_energy.dmi'
 	icon_state = "toolboxsword"
+	icon_state_on = "toolboxsword"
 	attack_verb_on = list("BONKED!")
 	w_class = WEIGHT_CLASS_SMALL
 	w_class_on = WEIGHT_CLASS_HUGE
-	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	icon_state = "sword0"
-	icon_state_on = "toolboxsword"
+	lefthand_file = 'perpstation/icons/mob/inhands/weapons/swords_lefthand.dmi'
+	righthand_file = 'perpstation/icons/mob/inhands/weapons/swords_righthand.dmi'
 	sharpness = IS_BLUNT
 
 /obj/item/melee/transforming/energy/sword/greytide/ignition_effect(atom/A, mob/user)
