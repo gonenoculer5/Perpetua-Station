@@ -6,9 +6,9 @@
 	item_state = "espear0"
 	lefthand_file = 'perpstation/icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'perpstation/icons/mob/inhands/weapons/polearms_righthand.dmi'
-	attack_verb = list("gored")
+	attack_verb = list("greytided")
 	hitsound = 'sound/weapons/blade1.ogg'
-	force=20
+	force=30
 
 /obj/item/twohanded/spear/espear/Initialize()
 	. = ..()

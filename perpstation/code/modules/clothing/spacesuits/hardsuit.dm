@@ -4,7 +4,6 @@
 /obj/item/clothing/head/helmet/space/hardsuit/assistant
 	name = "Assistant hardsuit helmet"
 	desc = "Err, totally not Syndicate property painted grey, promise!" 
-	icon = 'perpstation/icons/mob/clothing/assistanthead.dmi'
 	icon_state = 'helmetforassistant'
 	armor = list("melee" = 30, "bullet" = 40, "laser" = 55, "energy" = 55, "bomb" = 30, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60)
 	strip_delay = 600
@@ -16,8 +15,6 @@
 /obj/item/clothing/suit/space/hardsuit/assistant
 	name = "Assistant hardsuit"
 	desc = "Err, totally not Syndicate property painted grey, promise!"
-	icon = 'perpstation/icons/mob/clothing/assistanthard.dmi'
-	alternate_worn_icon = 'perpstation/icons/mob/clothing/assistanthard.dmi'
 	icon_state = 'assistanthardsuit'
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF
@@ -34,7 +31,6 @@
 /obj/item/clothing/head/helmet/space/hardsuit/eliteassistant
 	name = "Elite Assistant hardsuit helmet"
 	desc = "Err, totally not Syndicate property painted grey, promise!"
-	icon = 'perpstation/icons/mob/clothing/elitehelmet.dmi'
 	icon_state = 'elitehelmet'
 	armor = list("melee" = 30, "bullet" = 40, "laser" = 55, "energy" = 55, "bomb" = 30, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60)
 	strip_delay = 600
@@ -45,8 +41,6 @@
 /obj/item/clothing/suit/space/hardsuit/eliteassistant
 	name = "Elite Assistant hardsuit"
 	desc = "Err, totally not Syndicate property painted grey, promise!"
-	icon = 'perpstation/icons/mob/clothing/elitehard.dmi'
-	alternate_worn_icon = 'perpstation/icons/mob/clothing/elitehard.dmi'
 	icon_state = 'eliteassistant'
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF
