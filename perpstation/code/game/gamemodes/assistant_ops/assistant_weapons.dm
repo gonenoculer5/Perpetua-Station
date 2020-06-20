@@ -4,7 +4,7 @@
 	name = "energy toolbox"
 	desc = "What could possibly go wrong?"
 	icon = 'perpstation/icons/obj/transforming_energy.dmi'
-	icon_state = "toolboxsword"
+	icon_state = "sword0"
 	icon_state_on = "toolboxsword"
 	attack_verb_on = list("BONKED!")
 	w_class = WEIGHT_CLASS_SMALL
