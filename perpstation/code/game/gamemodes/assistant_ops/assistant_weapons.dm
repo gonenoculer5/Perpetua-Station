@@ -3,7 +3,7 @@
 /obj/item/melee/transforming/energy/sword/greytide
 	name = "energy toolbox"
 	desc = "What could possibly go wrong?"
-	icon = '/perpstation/icons/obj/transforming_energy.dmi'
+	icon = 'perpstation/icons/obj/transforming_energy.dmi'
 	icon_state = "toolboxsword"
 	icon_state_on = "toolboxsword"
 	attack_verb_on = list("BONKED!")
