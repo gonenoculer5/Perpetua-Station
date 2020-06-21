@@ -19,6 +19,7 @@
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
 #include "_maps\map_files\ElysianStation\elysianstation.dmm"
+#include "austation\define_includes.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\_globals.dm"
@@ -2872,8 +2873,8 @@
 #include "code\modules\shuttle\shuttle_creation\shuttle_creator_console.dm"
 #include "code\modules\shuttle\shuttle_creation\shuttle_creator_eye.dm"
 #include "code\modules\shuttle\shuttle_creation\shuttle_creator_overlay.dm"
-#include "code\modules\spells\spell.dm"
 #include "code\modules\shuttle\shuttle_creation\shuttle_upgrades.dm"
+#include "code\modules\spells\spell.dm"
 #include "code\modules\spells\spell_types\aimed.dm"
 #include "code\modules\spells\spell_types\area_teleport.dm"
 #include "code\modules\spells\spell_types\barnyard.dm"
@@ -3060,6 +3061,8 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "perpstation\code\datums\ai_laws\ai_laws_perp.dm"
+#include "perpstation\code\ported\t5_parts.dm"
 // END_INCLUDE
 
 // BEGIN_AUSTATION_INCLUDES
