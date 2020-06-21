@@ -180,3 +180,6 @@
 
 /obj/effect/turf_decal/raven/nine
 	icon_state = "RAVEN9"
+
+/obj/effect/turf_decal/perpplaque
+	icon = 'perpstation/icons/obj/turf/plaque.dmi'
