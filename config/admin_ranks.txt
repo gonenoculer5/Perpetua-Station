@@ -100,6 +100,8 @@ Exclude =
 Edit = EVERYTHING
 
 Name = Head-Maintainer
-Include = ADMIN DEBUG SERVER SOUND POLL VAREDIT SPAWN
+Include = ADMIN DEBUG SERVER SOUND VAREDIT SPAWN FUN
 Exclude =
 Edit =
+
+##Maintainer admin is for extra tools for maintaining the server, not for doing actual admin things.
