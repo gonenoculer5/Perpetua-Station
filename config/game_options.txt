@@ -104,9 +104,9 @@ PROBABILITY GANG 3
 PROBABILITY WIZARD 2
 PROBABILITY CLOWNOPS 2
 PROBABILITY MONKEY 1
-PROBABILITY METEOR 0
+PROBABILITY METEOR 1
 PROBABILITY EXTENDED 0
-PROBABILITY SECRET_EXTENDED 0
+PROBABILITY SECRET_EXTENDED 1
 PROBABILITY DEVIL 0
 PROBABILITY DEVIL_AGENTS 0
 
@@ -232,7 +232,7 @@ PROTECT_ROLES_FROM_ANTAGONIST
 #PROTECT_ASSISTANT_FROM_ANTAGONIST
 
 ## If non-human species are barred from joining as a head of staff
-#ENFORCE_HUMAN_AUTHORITY
+ENFORCE_HUMAN_AUTHORITY
 
 ## If late-joining players have a chance to become a traitor/changeling
 ALLOW_LATEJOIN_ANTAGONISTS
@@ -244,7 +244,7 @@ ALLOW_LATEJOIN_ANTAGONISTS
 USE_ANTAG_REP
 
 ## The maximum amount of antagonist reputation tickets a player can bank (not use at once)
-ANTAG_REP_MAXIMUM 200
+ANTAG_REP_MAXIMUM 300
 
 ## The default amount of tickets all users use while rolling
 DEFAULT_ANTAG_TICKETS 100
@@ -288,7 +288,7 @@ ALLOW_AI_MULTICAM
 
 ## Peacekeeper Borg ###
 ## Uncomment to prevent the peacekeeper cyborg module from being chosen
-#DISABLE_PEACEBORG
+DISABLE_PEACEBORG
 
 ## AWAY MISSIONS ###
 
@@ -352,7 +352,7 @@ NEAR_DEATH_EXPERIENCE
 ## Set to 1 for "custom", silicons will start with the custom laws defined in silicon_laws.txt. (If silicon_laws.txt is empty, the AI will spawn with asimov and Custom boards will auto-delete.)
 ## Set to 2 for "random", silicons will start with a random lawset picked from random laws specified below.
 ## Set to 3 for "weighted random", using values in "silicon_weights.txt", a law will be selected, with weights specifed in that file.
-DEFAULT_LAWS 0
+DEFAULT_LAWS 2
 
 ## RANDOM LAWS ##
 ## ------------------------------------------------------------------------------------------
