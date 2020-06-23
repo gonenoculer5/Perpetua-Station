@@ -49777,6 +49777,11 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
+"gpj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/prisoner,
+/turf/open/floor/plasteel,
+/area/security/prison)
 "gpk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -58666,6 +58671,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engine_smes)
+"uth" = (
+/obj/structure/chair/stool,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/prisoner,
+/turf/open/floor/plasteel,
+/area/security/prison)
 "utM" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer3{
 	dir = 1
@@ -87328,7 +87339,7 @@ aao
 aax
 aaC
 aat
-aat
+gpj
 adO
 oDL
 aat
@@ -88099,7 +88110,7 @@ aat
 aay
 aat
 aat
-aaJ
+uth
 aat
 aat
 abA
