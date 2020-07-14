@@ -704,6 +704,7 @@
 /obj/structure/chair/stool,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel,
 /area/security/prison)
 "abI" = (
@@ -84291,6 +84292,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
+"lPE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/prisoner,
+/turf/open/floor/plasteel,
+/area/security/prison)
 "lRd" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -86864,8 +86870,8 @@
 /obj/machinery/requests_console{
 	department = "Bar";
 	departmentType = 2;
-	pixel_y = 30;
-	receive_ore_updates = 1
+	receive_ore_updates = 1;
+	pixel_y = 30
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/drinks,
@@ -109863,7 +109869,7 @@ aaG
 aaP
 aax
 abn
-abE
+lPE
 abD
 acs
 acH

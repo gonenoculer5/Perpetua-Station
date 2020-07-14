@@ -104,7 +104,7 @@
 	display_name = "Beaker of Holding"
 	description = "We're really pushing the limits of chemistry here."
 	design_ids = list("beaker_of_holding")
-	prereq_ids = list("bluespace_storage")
+	prereq_ids = list("micro_bluespace")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 	export_price = 5000
 
