@@ -1927,6 +1927,7 @@
 /area/security/prison)
 "afo" = (
 /obj/structure/chair/stool,
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
 "afp" = (
@@ -21235,8 +21236,8 @@
 /obj/machinery/requests_console{
 	department = "Bar";
 	departmentType = 2;
-	pixel_y = 30;
-	receive_ore_updates = 1
+	receive_ore_updates = 1;
+	pixel_y = 30
 	},
 /obj/machinery/camera{
 	c_tag = "Bar Access";
