@@ -17,8 +17,9 @@ map boxstation
 	votable
 endmap
 
-map elysianstation
-	disabled
+map ministation
+	maxplayers 20
+	votable
 endmap
 
 map metastation

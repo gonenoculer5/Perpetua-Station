@@ -1,0 +1,40 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"c" = (/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"i" = (/turf/closed/wall/mineral/titanium,/area/template_noop)
+"j" = (/obj/structure/shuttle/engine/propulsion/burst/right,/turf/open/floor/plating/airless,/area/template_noop)
+"n" = (/obj/effect/turf_decal/stripes/line{dir = 8},/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"p" = (/obj/effect/turf_decal/stripes/line{dir = 9},/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"q" = (/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"r" = (/obj/effect/turf_decal/stripes/line{dir = 1},/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"s" = (/obj/effect/turf_decal/bot,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"t" = (/obj/effect/turf_decal/stripes/line{dir = 5},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"v" = (/obj/structure/shuttle/engine/propulsion,/turf/open/floor/plating/airless,/area/template_noop)
+"z" = (/obj/effect/turf_decal/bot,/obj/effect/decal/cleanable/oil,/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"A" = (/obj/machinery/door/airlock/titanium{name = "Supply Shuttle Airlock"; req_access_txt = "31"},/obj/structure/fans/tiny,/turf/open/floor/plating,/area/shuttle/supply)
+"C" = (/obj/machinery/conveyor{dir = 8; id = "QMLoad"},/obj/machinery/door/poddoor{id = "QMLoaddoor"; name = "supply dock loading door"},/obj/structure/fans/tiny,/turf/open/floor/plating,/area/shuttle/supply)
+"D" = (/obj/effect/turf_decal/stripes/line{dir = 10},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"E" = (/obj/effect/turf_decal/stripes/line{dir = 6},/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"G" = (/obj/effect/turf_decal/bot,/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"I" = (/obj/machinery/door/airlock/titanium{name = "Supply Shuttle Airlock"; req_access_txt = "31"},/obj/docking_port/mobile/supply,/obj/structure/fans/tiny,/turf/open/floor/plating,/area/shuttle/supply)
+"K" = (/obj/machinery/conveyor{dir = 4; id = "QMLoad2"},/obj/machinery/door/poddoor{id = "QMLoaddoor2"; name = "supply dock loading door"},/obj/structure/fans/tiny,/turf/open/floor/plating,/area/shuttle/supply)
+"L" = (/obj/structure/window/reinforced{dir = 1},/obj/structure/shuttle/engine/heater,/turf/open/floor/plating/airless,/area/shuttle/supply)
+"N" = (/obj/machinery/button/door{id = "QMLoaddoor2"; name = "Loading Doors"; pixel_x = 24; pixel_y = 8},/obj/machinery/button/door{id = "QMLoaddoor"; name = "Loading Doors"; pixel_x = 24; pixel_y = -8},/obj/machinery/light{dir = 4},/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"P" = (/obj/effect/turf_decal/delivery,/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"R" = (/turf/closed/wall/mineral/titanium,/area/shuttle/supply)
+"V" = (/obj/effect/turf_decal/delivery,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/dark,/area/shuttle/supply)
+"Z" = (/obj/structure/shuttle/engine/propulsion/burst/left,/turf/open/floor/plating/airless,/area/template_noop)
+
+(1,1,1) = {"
+iiiiiii
+RprrrtR
+RnsGGcR
+RnsGGcK
+RnzGGcA
+RnGGGNR
+RnGGscI
+RnGGscC
+RDqqqER
+RRPPVRR
+iRLLLRi
+aZvvvja
+"}
