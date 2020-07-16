@@ -44,6 +44,11 @@ Include = ADMIN
 Exclude =
 Edit =
 
+Name = Head-Moderator
+Include = EVERYTHING
+Exclude =
+Edit = EVERYTHING
+
 Name = Admin Candidate
 Include = @
 Exclude =
@@ -74,7 +79,7 @@ Include = EVERYTHING
 Exclude = AUTOADMIN
 Edit = EVERYTHING
 
-Name = Host
+Name = Owner
 Include = EVERYTHING
 Exclude =
 Edit = EVERYTHING
