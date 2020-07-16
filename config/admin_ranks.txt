@@ -49,6 +49,11 @@ Include = @
 Exclude =
 Edit =
 
+Name = Head-Moderator
+Include = EVERYTHING
+Exclude =
+Edit = EVERYTHING
+
 Name = Trial Admin
 Include = @ SPAWN VAREDIT BAN
 Exclude =
@@ -74,7 +79,7 @@ Include = EVERYTHING
 Exclude = AUTOADMIN
 Edit = EVERYTHING
 
-Name = Host
+Name = Owner
 Include = EVERYTHING
 Exclude =
 Edit = EVERYTHING
