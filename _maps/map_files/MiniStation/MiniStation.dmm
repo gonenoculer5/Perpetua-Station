@@ -15938,9 +15938,8 @@
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "QG" = (
-/obj/machinery/atmospherics/components/binary/circulator/cold{
-	dir = 8;
-	icon_state = "circ-off-0"
+/obj/machinery/atmospherics/components/binary/circulator{
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
@@ -17204,9 +17203,8 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "ZX" = (
-/obj/machinery/atmospherics/components/binary/circulator{
-	dir = 4;
-	icon_state = "circ-off-0"
+/obj/machinery/atmospherics/components/binary/circulator/cold{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
