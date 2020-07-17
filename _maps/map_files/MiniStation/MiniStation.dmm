@@ -15758,9 +15758,6 @@
 /turf/open/floor/engine,
 /area/engine/engineering)
 "PV" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 1
 	},
@@ -49771,7 +49768,7 @@ FB
 FB
 Wy
 NX
-PV
+YD
 FB
 Zd
 Tq
@@ -50028,7 +50025,7 @@ LF
 LF
 Wy
 VK
-Zc
+PV
 QT
 Vz
 rQ
