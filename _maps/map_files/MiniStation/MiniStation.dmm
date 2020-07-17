@@ -10650,6 +10650,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 5
 	},
+/obj/machinery/sparker{
+	id = "burnchamber";
+	pixel_x = -25
+	},
 /turf/open/floor/engine/vacuum,
 /area/engine/engineering)
 "wy" = (
@@ -14194,6 +14198,14 @@
 	},
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
+"GZ" = (
+/obj/machinery/button/ignition{
+	id = "burnchamber";
+	pixel_x = 25;
+	pixel_y = -5
+	},
+/turf/open/floor/engine,
+/area/engine/engineering)
 "Ha" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -17009,6 +17021,14 @@
 /obj/machinery/door/airlock/engineering/glass{
 	name = "TEG Engine Room";
 	req_access_txt = "10"
+	},
+/turf/open/floor/plasteel,
+/area/engine/engineering)
+"Yy" = (
+/obj/machinery/button/ignition{
+	id = "burnchamber";
+	pixel_x = 25;
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -50758,11 +50778,11 @@ Hw
 Cl
 Zj
 Yi
-za
+Yy
 Zz
 Xz
 DN
-LR
+GZ
 yA
 aa
 aa
