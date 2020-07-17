@@ -16699,6 +16699,7 @@
 /area/engine/engineering)
 "VY" = (
 /obj/machinery/power/generator,
+/obj/structure/cable,
 /turf/open/floor/engine,
 /area/engine/engineering)
 "Wg" = (
