@@ -6334,6 +6334,9 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+/obj/machinery/computer/camera_advanced/xenobio{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "me" = (
@@ -14340,8 +14343,10 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/purple,
-/obj/machinery/light{
-	dir = 8
+/obj/machinery/light,
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
 	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
@@ -15659,6 +15664,8 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+/obj/structure/closet/l3closet/scientist,
+/obj/item/extinguisher,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "HT" = (
