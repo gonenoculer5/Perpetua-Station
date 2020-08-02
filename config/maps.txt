@@ -22,6 +22,11 @@ map ministation
 	votable
 endmap
 
+map orbitalstation
+	maxplayers 20
+	votable
+endmap
+
 map metastation
 	maxplayers 100
 	votable
