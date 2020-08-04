@@ -2,10 +2,10 @@
 AUTOSANDBOX_ENABLED
 
 ## The threshold at which the server will automatically swap from secret to sandbox if server population is less than or equal to this number (default: 5)
-AUTOSANDBOX_MIN 5
+AUTOSANDBOX_MIN 0
 
 ## The threshold at which the server will automatically swap from sandbox to secret if server population is greater than or equal to this number (default: 10)
-AUTOSANDBOX_MAX 6
+AUTOSANDBOX_MAX 0
 
 ## Server tagline: This will appear right below the server's title.
 SERVERTAGLINE Excellence at your fingertips. Until it isn't.

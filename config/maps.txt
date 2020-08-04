@@ -20,6 +20,7 @@ endmap
 map ministation
 	maxplayers 20
 	votable
+	voteweight 2
 endmap
 
 map orbitalstation
