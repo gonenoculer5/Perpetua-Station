@@ -3930,6 +3930,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "hB" = (
@@ -16157,10 +16160,6 @@
 /turf/open/space/basic,
 /area/space)
 "Js" = (
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
-	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
@@ -17264,10 +17263,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
-"Ol" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/space)
 "On" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -17617,21 +17612,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
-"Qf" = (
-/obj/effect/turf_decal/tile/brown{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/quartermaster/storage)
 "Qg" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 4
@@ -45044,9 +45024,9 @@ am
 fW
 lJ
 LN
-eX
-Ol
-eX
+kf
+fW
+kf
 fW
 lJ
 LN
@@ -47085,12 +47065,12 @@ cM
 gB
 iD
 gB
-gB
-fx
 Js
+fx
+gB
 qF
 gB
-Qf
+qF
 gB
 hA
 rP
