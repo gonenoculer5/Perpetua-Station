@@ -3,7 +3,7 @@
     "map_path": "map_files/OrbitalStation",
     "map_file": "OrbitalStation.dmm",
     "shuttles": {
-	    "emergency": "emergency_orbital",
+	    "emergency": "emergency_box",
 	    "whiteship": "whiteship_pubby",
 	    "ferry": "ferry_fancy",
 	    "cargo": "cargo_delta"
