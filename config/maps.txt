@@ -17,17 +17,6 @@ map boxstation
 	votable
 endmap
 
-map ministation
-	maxplayers 20
-	votable
-	voteweight 2
-endmap
-
-map orbitalstation
-	maxplayers 20
-	votable
-endmap
-
 map metastation
 	maxplayers 100
 	votable
@@ -63,4 +52,19 @@ map kilostation
     maxplayers 80
 	votable
 	disabled
+endmap
+
+map austation
+	disabled	
+endmap
+
+map ministation
+	maxplayers 20
+	votable
+	voteweight 2
+endmap
+
+map orbitalstation
+	maxplayers 50
+	votable
 endmap
