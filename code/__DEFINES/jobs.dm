@@ -44,11 +44,11 @@
 #define CLOWN			(1<<11)
 #define MIME			(1<<12)
 #define ASSISTANT		(1<<13)
-#define PRISONER		(1<<14)
-#define GIMMICK 		(1<<15)
-#define BARBER		    (1<<16)
-#define MAGICIAN        (1<<17)
-#define HOBO            (1<<18)
+#define GIMMICK 		(1<<14)
+#define BARBER		    (1<<15)
+#define MAGICIAN        (1<<16)
+#define HOBO            (1<<17)
+#define SHRINK          (1<<18)
 
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1
@@ -96,4 +96,3 @@
 #define JOB_DISPLAY_ORDER_DEPUTY 32 
 #define JOB_DISPLAY_ORDER_AI 33
 #define JOB_DISPLAY_ORDER_CYBORG 34
-#define JOB_DISPLAY_ORDER_PRISONER 35

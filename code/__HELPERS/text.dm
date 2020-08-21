@@ -13,10 +13,6 @@
  * SQL sanitization
  */
 
-/// Run all strings to be used in an SQL query through this proc first to properly escape out injection attempts.
-/proc/sanitizeSQL(t)
-	return SSdbcore.Quote("[t]")
-
 /proc/format_table_name(table as text)
 	return CONFIG_GET(string/feedback_tableprefix) + table
 
@@ -730,7 +726,7 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 
 /// Replacement for the \th macro when you want the whole word output as text (first instead of 1st)
 /proc/thtotext(number)
-	if(!isnum(number))
+	if(!isnum_safe(number))
 		return
 	switch(number)
 		if(1)

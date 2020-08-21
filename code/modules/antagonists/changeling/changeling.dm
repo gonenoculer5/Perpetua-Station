@@ -82,6 +82,7 @@
 	if(give_objectives)
 		forge_objectives()
 	remove_clownmut()
+	owner.current.grant_all_languages(FALSE, FALSE, TRUE)	//Grants omnitongue. We are able to transform our body after all.
 	. = ..()
 
 /datum/antagonist/changeling/on_removal()
@@ -528,7 +529,6 @@
 	give_objectives = FALSE
 	show_in_roundend = FALSE //These are here for admin tracking purposes only
 	you_are_greet = FALSE
-	geneticpoints = 3
 
 /datum/antagonist/changeling/roundend_report()
 	var/list/parts = list()
