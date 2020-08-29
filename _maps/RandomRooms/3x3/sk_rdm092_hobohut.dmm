@@ -43,7 +43,6 @@
 /area/template_noop)
 "L" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/plating,
 /area/template_noop)
 "M" = (

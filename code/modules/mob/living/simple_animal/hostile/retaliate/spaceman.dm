@@ -15,7 +15,9 @@
 	maxHealth = 100
 	health = 100
 	speed = 0
-	melee_damage = 10
+	harm_intent_damage = 8
+	melee_damage_lower = 10
+	melee_damage_upper = 10
 	attacktext = "hits"
 	attack_sound = 'sound/weapons/punch1.ogg'
 	obj_damage = 0
@@ -42,7 +44,9 @@
 	vision_range = 3
 	maxHealth = 100
 	health = 100
-	melee_damage = 12
+	harm_intent_damage = 5
+	melee_damage_lower = 10
+	melee_damage_upper = 15
 	attacktext = "punches"
 	attack_sound = 'sound/weapons/punch1.ogg'
 	faction = list("nanotrasenprivate")

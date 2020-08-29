@@ -12,6 +12,7 @@
 	var/obj/screen/component_button/button_shrink
 
 	var/mutable_appearance/standard_background
+	var/const/max_dimensions = 10
 
 /obj/screen/movable/pic_in_pic/Initialize()
 	. = ..()
@@ -100,11 +101,9 @@
 		standard_background.transform = M
 		add_overlay(standard_background)
 
-// maximum number of dimensions is 10
-
 /obj/screen/movable/pic_in_pic/proc/set_view_size(width, height, do_refresh = TRUE)
-	width = clamp(width, 0, 10)
-	height = clamp(height, 0, 10)
+	width = CLAMP(width, 0, max_dimensions)
+	height = CLAMP(height, 0, max_dimensions)
 	src.width = width
 	src.height = height
 

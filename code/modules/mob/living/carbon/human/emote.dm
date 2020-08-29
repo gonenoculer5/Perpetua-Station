@@ -129,7 +129,10 @@
 	. = ..()
 	if(.)
 		var/mob/living/carbon/human/H = user
-		H.Togglewings()
+		if(findtext(select_message_type(user,intentional), "open"))
+			H.OpenWings()
+		else
+			H.CloseWings()
 
 /datum/emote/living/carbon/human/wing/select_message_type(mob/user, intentional)
 	. = ..()
@@ -146,14 +149,24 @@
 	if(H.dna && H.dna.species && (H.dna.features["wings"] != "None"))
 		return TRUE
 
-/mob/living/carbon/human/proc/Togglewings()
+/mob/living/carbon/human/proc/OpenWings()
 	if(!dna || !dna.species)
-		return FALSE
-	var/obj/item/organ/wings/wings = getorganslot(ORGAN_SLOT_WINGS)
-	if(getorgan(/obj/item/organ/wings))
-		if(wings.toggleopen(src))
-			return TRUE
-	return FALSE
+		return
+	if("wings" in dna.species.mutant_bodyparts)
+		dna.species.mutant_bodyparts -= "wings"
+		dna.species.mutant_bodyparts |= "wingsopen"
+	update_body()
+
+/mob/living/carbon/human/proc/CloseWings()
+	if(!dna || !dna.species)
+		return
+	if("wingsopen" in dna.species.mutant_bodyparts)
+		dna.species.mutant_bodyparts -= "wingsopen"
+		dna.species.mutant_bodyparts |= "wings"
+	update_body()
+	if(isturf(loc))
+		var/turf/T = loc
+		T.Entered(src)
 
 
 /datum/emote/living/carbon/human/fart

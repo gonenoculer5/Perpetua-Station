@@ -17,7 +17,8 @@
 	pixel_x = -16
 	maxHealth = 45
 	health = 45
-	melee_damage = 30
+	melee_damage_lower = 30
+	melee_damage_upper = 30
 	pixel_y = -8
 	ranged = TRUE
 	ranged_cooldown_time = 10
@@ -88,7 +89,8 @@
 
 /mob/living/simple_animal/hostile/jungle/mook/proc/SlashAttack()
 	if(target && !stat && attack_state == MOOK_ATTACK_ACTIVE)
-		melee_damage = 15
+		melee_damage_lower = 15
+		melee_damage_upper = 15
 		var/mob_direction = get_dir(src,target)
 		if(get_dist(src,target) > 1)
 			step(src,mob_direction)
@@ -104,7 +106,8 @@
 	if(target && !stat && attack_state == MOOK_ATTACK_WARMUP)
 		attack_state = MOOK_ATTACK_ACTIVE
 		density = FALSE
-		melee_damage = 30
+		melee_damage_lower = 30
+		melee_damage_upper = 30
 		update_icons()
 		new /obj/effect/temp_visual/mook_dust(get_turf(src))
 		playsound(src, 'sound/weapons/thudswoosh.ogg', 25, 1)

@@ -15,7 +15,8 @@
 	response_help  = "pokes"
 	response_disarm = "passes"
 	response_harm   = "breaks"
-	melee_damage = 10
+	melee_damage_lower = 8
+	melee_damage_upper = 12
 	attacktext = "bites"
 	attack_sound = 'sound/weapons/bite.ogg'
 	ventcrawler = VENTCRAWLER_ALWAYS
@@ -37,8 +38,9 @@
 	if(mutations <= mutationcap)
 		resize = 1.1
 		maxHealth += 5
-		health = maxHealth += 1
-		melee_damage += 2
+		health = maxHealth
+		melee_damage_lower += 1
+		melee_damage_upper += 2
 		mutations++
 
 /mob/living/simple_animal/hostile/breadloaf/slice
@@ -49,7 +51,8 @@
 	icon_living = "mutantbreadslice"
 	icon_dead = "breadslice"
 	butcher_results = null
-	melee_damage = 8
+	melee_damage_lower = 6
+	melee_damage_upper = 8
 	maxHealth = 20
 	health = 20
 	stability = 15

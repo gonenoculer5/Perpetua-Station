@@ -1,7 +1,7 @@
 /proc/getviewsize(view)
 	var/viewX
 	var/viewY
-	if(isnum_safe(view))
+	if(isnum(view))
 		var/totalviewrange = (view < 0 ? -1 : 1) + 2 * view
 		viewX = totalviewrange
 		viewY = totalviewrange

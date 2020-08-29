@@ -91,7 +91,6 @@ GLOBAL_LIST_INIT(devil_suffix, list(" the Red", " the Soulless", " the Master", 
 	job_rank = ROLE_DEVIL
 	//Don't delete upon mind destruction, otherwise soul re-selling will break.
 	delete_on_mind_deletion = FALSE
-	show_to_ghosts = TRUE
 	var/obligation
 	var/ban
 	var/bane
@@ -525,7 +524,7 @@ GLOBAL_LIST_INIT(devil_suffix, list(" the Red", " the Soulless", " the Master", 
 
 /datum/antagonist/devil/apply_innate_effects(mob/living/mob_override)
 	give_appropriate_spells()
-	owner.current.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_DEVIL)
+	owner.current.grant_all_languages(TRUE)
 	update_hud()
 	.=..()
 
@@ -534,7 +533,6 @@ GLOBAL_LIST_INIT(devil_suffix, list(" the Red", " the Soulless", " the Master", 
 		var/obj/effect/proc_holder/spell/S = X
 		if(is_type_in_typecache(S, devil_spells))
 			owner.RemoveSpell(S)
-	owner.current.remove_all_languages(LANGUAGE_DEVIL)
 	.=..()
 
 /datum/antagonist/devil/proc/printdevilinfo()

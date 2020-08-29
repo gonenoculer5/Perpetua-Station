@@ -109,5 +109,3 @@
 	var/keysend_tripped = FALSE
 
 	var/datum/viewData/view_size
-	/// rate limiting for the crew manifest
-	var/crew_manifest_delay

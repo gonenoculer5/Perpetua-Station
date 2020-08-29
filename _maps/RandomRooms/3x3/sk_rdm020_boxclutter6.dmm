@@ -18,7 +18,6 @@
 /area/template_noop)
 "e" = (
 /obj/structure/chair/stool,
-/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating,
 /area/template_noop)
 "f" = (

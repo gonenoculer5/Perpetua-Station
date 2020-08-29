@@ -26,7 +26,8 @@
 	icon_gib = "syndicate_gib"
 	maxHealth = 800
 	health = 800
-	melee_damage = 30
+	melee_damage_lower = 30
+	melee_damage_upper = 30
 	attacktext = "slashes its arms at"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	throw_message = "doesn't affect the sturdiness of"
@@ -150,9 +151,11 @@
 		myhead = newhead
 		myhead.body = src
 		if(health < maxHealth * 0.25)
-			myhead.melee_damage = 30
+			myhead.melee_damage_lower = 30
+			myhead.melee_damage_upper = 30
 		else if(health < maxHealth * 0.5)
-			myhead.melee_damage = 20
+			myhead.melee_damage_lower = 20
+			myhead.melee_damage_upper = 20
 
 /mob/living/simple_animal/hostile/asteroid/elite/legionnaire/proc/onHeadDeath()
 	myhead = null
@@ -218,7 +221,8 @@
 	icon_gib = "syndicate_gib"
 	maxHealth = 80
 	health = 80
-	melee_damage = 10
+	melee_damage_lower = 10
+	melee_damage_upper = 10
 	attacktext = "bites at"
 	attack_sound = 'sound/effects/curse1.ogg'
 	throw_message = "simply misses"

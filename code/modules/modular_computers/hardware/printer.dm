@@ -33,6 +33,7 @@
 	if(paper_title)
 		P.name = paper_title
 	P.update_icon()
+	P.reload_fields()
 	stored_paper--
 	P = null
 	return TRUE

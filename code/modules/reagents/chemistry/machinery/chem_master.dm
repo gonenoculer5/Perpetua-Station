@@ -372,7 +372,7 @@
 
 
 /obj/machinery/chem_master/proc/isgoodnumber(num)
-	if(isnum_safe(num))
+	if(isnum(num))
 		if(num > 200)
 			num = 200
 		else if(num < 0)

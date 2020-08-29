@@ -13,7 +13,8 @@
 	minimum_distance = 3
 	retreat_distance = 3
 	obj_damage = 0
-	melee_damage = 10
+	melee_damage_lower = 10
+	melee_damage_upper = 20
 	health = 1000
 	maxHealth = 1000
 	loot = list(/obj/effect/temp_visual/paperwiz_dying)
@@ -42,8 +43,8 @@
 	if(summoned_minions <= 6 && ..())
 		var/list/minions = list(
 		/mob/living/simple_animal/hostile/stickman,
-		/mob/living/simple_animal/hostile/stickman,
-		/mob/living/simple_animal/hostile/stickman/dog) //removed the ranged stickman, which makes him fucking annoying to fight
+		/mob/living/simple_animal/hostile/stickman/ranged,
+		/mob/living/simple_animal/hostile/stickman/dog)
 		var/list/directions = GLOB.cardinals.Copy()
 		for(var/i in 1 to 3)
 			var/minions_chosen = pick_n_take(minions)
@@ -94,7 +95,8 @@
 	maxHealth = 1
 	alpha = 200
 	boss_abilities = list()
-	melee_damage = 1
+	melee_damage_lower = 1
+	melee_damage_upper = 5
 	minimum_distance = 0
 	retreat_distance = 0
 	ranged = 0

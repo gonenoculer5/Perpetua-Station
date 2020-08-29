@@ -14,7 +14,9 @@
 	speed = 0
 	maxHealth = 100
 	health = 100
-	melee_damage = 5
+	harm_intent_damage = 5
+	melee_damage_lower = 5
+	melee_damage_upper = 5
 	attacktext = "punches"
 	attack_sound = 'sound/weapons/punch1.ogg'
 	a_intent = INTENT_HARM

@@ -2,7 +2,6 @@
 	name = "Sentient Disease"
 	roundend_category = "diseases"
 	antagpanel_category = "Disease"
-	show_to_ghosts = TRUE
 	var/disease_name = ""
 
 /datum/antagonist/disease/on_gain()

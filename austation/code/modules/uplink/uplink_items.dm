@@ -7,10 +7,3 @@
 	item = /obj/item/sbeacondrop/deathsky
 	cost = 18
 	include_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
-
-/datum/uplink_item/role_restricted/bluespace_sharpener
-	name = "Bluespace Whetstone"
-	desc = "A bluespace block that will increase the effective range of most sharp weapons, one use only."
-	cost = 7
-	item = /obj/item/sharpener/bluespace
-	restricted_roles = list("Cook")

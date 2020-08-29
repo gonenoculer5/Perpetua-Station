@@ -23,7 +23,7 @@ const VendingRow = (props, context) => {
   return (
     <Table.Row>
       <Table.Cell collapsing>
-        {product.img ? (
+        {product.base64 ? (
           <img
             src={`data:image/jpeg;base64,${product.img}`}
             style={{

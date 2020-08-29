@@ -59,14 +59,12 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/dark,
 /area/template_noop)
 "k" = (
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/dark,
 /area/template_noop)
 "l" = (

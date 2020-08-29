@@ -325,10 +325,6 @@
 /obj/item/taperecorder,
 /turf/open/floor/plasteel/dark,
 /area/template_noop)
-"Z" = (
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plasteel/grimy,
-/area/template_noop)
 
 (1,1,1) = {"
 a
@@ -360,7 +356,7 @@ l
 l
 c
 e
-Z
+e
 F
 d
 M
@@ -391,7 +387,7 @@ B
 B
 "}
 (6,1,1) = {"
-Z
+e
 e
 e
 e

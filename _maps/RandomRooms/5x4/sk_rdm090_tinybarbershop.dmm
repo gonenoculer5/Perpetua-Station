@@ -104,10 +104,6 @@
 /obj/item/reagent_containers/medspray/spraytan,
 /turf/open/floor/plating,
 /area/template_noop)
-"M" = (
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/carpet/green,
-/area/template_noop)
 
 (1,1,1) = {"
 a
@@ -135,7 +131,7 @@ k
 "}
 (5,1,1) = {"
 e
-M
+h
 i
 l
 "}

@@ -263,7 +263,7 @@ export const AACControl = (props, context) => {
 };
 
 export const Vent = (props, context) => {
-  const { act, data } = useBackend(context);
+  const { act } = useBackend(context);
   const {
     vent_id,
     name,
@@ -273,13 +273,10 @@ export const Vent = (props, context) => {
     <Section
       level={2}
       title={decodeHtmlEntities(name)}
-      buttons={(<Button
-        content="Show Hologram"
-        selected={data.vis_target === vent_id}
-        onClick={() => act(
-          data.vis_target === vent_id ? 'clear_vis' : 'set_vis_vent', {
-            vent_id,
-          })} />)}>
+      onmouseover={() => { act('set_vis_vent', {
+        vent_id: vent_id,
+      }); }}
+      onmouseout={() => { act('clear_vis'); }}>
       <LabeledList>
         <LabeledList.Item label="Roles">
           <Button
@@ -321,7 +318,7 @@ export const Vent = (props, context) => {
 };
 
 export const Airlock = (props, context) => {
-  const { act, data } = useBackend(context);
+  const { act } = useBackend(context);
   const {
     airlock_id,
     name,
@@ -332,13 +329,10 @@ export const Airlock = (props, context) => {
     <Section
       level={2}
       title={decodeHtmlEntities(name)}
-      buttons={(<Button
-        content="Show Hologram"
-        selected={data.vis_target === airlock_id}
-        onClick={() => act(
-          data.vis_target === airlock_id ? 'clear_vis' : 'set_vis_airlock', {
-            airlock_id,
-          })} />)}>
+      onmouseover={() => { act('set_vis_airlock', {
+        airlock_id: airlock_id,
+      }); }}
+      onmouseout={() => { act('clear_vis'); }}>
       <LabeledList>
         <LabeledList.Item label="Roles">
           <Button

@@ -33,7 +33,6 @@
 "g" = (
 /obj/effect/turf_decal/caution,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel,
 /area/template_noop)
 "h" = (

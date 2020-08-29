@@ -50,8 +50,6 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/blood/old,
-/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -75,31 +73,21 @@
 	icon_state = "panelscorched"
 	},
 /area/template_noop)
-"r" = (
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating,
-/area/template_noop)
-"P" = (
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/template_noop)
 
 (1,1,1) = {"
 a
-r
+c
 g
 "}
 (2,1,1) = {"
 b
-P
+f
 h
 "}
 (3,1,1) = {"
-r
 c
-r
+c
+c
 "}
 (4,1,1) = {"
 d

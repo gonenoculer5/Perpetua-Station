@@ -19,8 +19,10 @@
 	health = 50000
 	healable = 0
 
+	harm_intent_damage = 10
 	obj_damage = 100
-	melee_damage = 70
+	melee_damage_lower = 68
+	melee_damage_upper = 83
 	attacktext = "claws"
 	attack_sound = 'sound/hallucinations/growl1.ogg'
 
@@ -45,7 +47,6 @@
 	move_force = MOVE_FORCE_EXTREMELY_STRONG
 	move_resist = MOVE_FORCE_EXTREMELY_STRONG
 	pull_force = MOVE_FORCE_EXTREMELY_STRONG
-	hardattacks = TRUE
 
 	var/cannot_be_seen = 1
 	var/mob/living/creator = null

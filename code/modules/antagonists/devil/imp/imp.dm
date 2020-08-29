@@ -29,7 +29,8 @@
 	healable = 0
 	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	obj_damage = 40
-	melee_damage = 10
+	melee_damage_lower = 10
+	melee_damage_upper = 15
 	see_in_dark = 8
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	var/boost = 0

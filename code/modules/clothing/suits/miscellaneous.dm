@@ -305,11 +305,11 @@
 	desc = "A hood attached to a bee costume."
 	icon_state = "bee"
 	body_parts_covered = HEAD
-	clothing_flags = THICKMATERIAL | SNUG_FIT
+	clothing_flags = THICKMATERIAL
 	flags_inv = HIDEHAIR|HIDEEARS
 	dynamic_hair_suffix = ""
 
-/obj/item/clothing/suit/hooded/bee_costume/syndie 
+/obj/item/clothing/suit/hooded/bee_costume/syndie
 	name = "BLF costume"
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 20,"energy" = 40, "bomb" = 0, "bio" = 60, "rad" = 0, "fire" = 0, "acid" = 50)
 	hoodtype = /obj/item/clothing/head/hooded/bee_hood/syndie
@@ -660,7 +660,7 @@
 	icon_state = "joker"
 	item_state = "joker"
 	item_color = "joker"
-	can_adjust = FALSE	
+	can_adjust = FALSE
 
 /obj/item/clothing/suit/joker
 	name = "comedian coat"
@@ -668,3 +668,109 @@
 	icon_state = "joker_coat"
 	item_state = "joker_coat"
 	item_color = "joker_coat"
+
+// HEAD OF STAFF WINTER COATS
+// Sprites designed by Papaporo Paprito, code done by Cosmic Phoenix.
+
+// They go poof
+
+//this starts Homingpenguins' section of winter coat code.
+//Sprites made by Jo, YouTubeBoy, HomingPenguins, and BeardlessJo
+//code done by Homingpenguins.
+
+/obj/item/clothing/suit/hooded/wintercoat/security/lawyer
+	name = "\improper Lawyer's winter coat"
+	desc = "This is a winter coat custom tailored for the lawyer."
+	icon_state = "wintercoat_law"
+	item_state = "wintercoat_law"
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/security/law
+
+/obj/item/clothing/head/hooded/winterhood/security/law
+	icon_state = "winterhood_law"
+
+/obj/item/clothing/suit/hooded/wintercoat/service/bartender
+	name = "\improper Bartender's winter coat"
+	desc = "This is a winter coat made to look like a butler's suit."
+	icon_state = "wintercoat_bar"
+	item_state = "wintercoat_bar"
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/toy, /obj/item/storage/fancy/cigarettes, /obj/item/lighter)
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/service/bar
+
+/obj/item/clothing/head/hooded/winterhood/service/bar
+	icon_state = "winterhood_bar"
+
+/obj/item/clothing/suit/hooded/wintercoat/medical/chem
+	name = "\improper Chemist's winter coat"
+	desc = "This is a winter coat made to protect from minor chemical spills and to have a stylish orange theme."
+	icon_state = "wintercoat_chem"
+	item_state = "wintercoat_chem"
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50)
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/chem
+
+/obj/item/clothing/head/hooded/winterhood/medical/chem
+	icon_state = "winterhood_chem"
+
+/obj/item/clothing/suit/hooded/wintercoat/medical/gen
+	name = "\improper Geneticist's winter coat"
+	desc = "This winter coat is made out of a comfortable material and dyed to the geneticist's color scheme."
+	icon_state = "wintercoat_gen"
+	item_state = "wintercoat_gen"
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50)
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/gen
+
+/obj/item/clothing/head/hooded/winterhood/medical/gen
+	icon_state = "winterhood_gen"
+
+/obj/item/clothing/suit/hooded/wintercoat/sec/pris
+	name = "\improper Prisioner's winter coat"
+	desc = "Made just for the times when the prison runs out of working space heaters."
+	icon_state = "wintercoat_pris"
+	item_state = "wintercoat_pris"
+	allowed = list(/obj/item/paper, /obj/item/soap, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/sec/pris
+
+/obj/item/clothing/head/hooded/winterhood/sec/pris
+	icon_state = "winterhood_pris"
+
+/obj/item/clothing/suit/hooded/wintercoat/med/para
+	name = "\improper Paramedic's winter coat"
+	desc = "Comfy alternitive to the paramedic's vest."
+	icon_state = "wintercoat_para"
+	item_state = "wintercoat_para"
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 50, "acid" = 50)
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/med/para
+
+/obj/item/clothing/head/hooded/winterhood/med/para
+	icon_state = "winterhood_para"
+
+//Commented out because of the terrible mining coat sprite i have.
+//Will fix the sprite when im not lazy
+/*/obj/item/clothing/suit/hooded/explorer/wintercoat/cargo/mining
+	name = "\improper Mining winter coat"
+	desc = "Comfy alternitive to the explorer's suit. Comes with all the feature's that it does."
+	icon_state = "wintercoat_min"
+	item_state = "wintercoat_min"
+	hoodtype = /obj/item/clothing/head/hooded/explorer/wintercoat/cargo/mining
+
+/obj/item/clothing/head/hooded/explorer/wintercoat/cargo/mining
+	icon_state = "winterhood_min"
+*/
+
+/obj/item/clothing/suit/hooded/wintercoat/service/chap
+	name = "\improper Chaplins's winter coat"
+	desc = "Warm, Stylish, approved by the church. Everything you need in a winter coat."
+	icon_state = "wintercoat_chap"
+	item_state = "wintercoat_chap"
+	allowed = list(/obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/service/chap
+
+/obj/item/clothing/head/hooded/winterhood/service/chap
+	icon_state = "winterhood_chap"

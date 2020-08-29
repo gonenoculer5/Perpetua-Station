@@ -84,7 +84,6 @@
 	new /obj/item/storage/photo_album/CMO(src)
 	new /obj/item/reagent_containers/food/drinks/bottle/synthflesh(src)
 	new /obj/item/card/id/departmental_budget/med(src)
-	new /obj/item/extrapolator(src)
 
 /obj/structure/closet/secure_closet/animal
 	name = "animal control"

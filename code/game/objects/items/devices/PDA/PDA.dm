@@ -594,6 +594,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 	return
 
 /obj/item/pda/proc/remove_id()
+
 	if(issilicon(usr) || !usr.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
 		return
 
@@ -659,10 +660,6 @@ GLOBAL_LIST_EMPTY(PDAs)
 	if (!string_targets.len)
 		return
 
-	if(CHAT_FILTER_CHECK(message))
-		to_chat(user, "<span class='warning'>ERROR: Prohibited word(s) detected in message.</span>")
-		return
-
 	var/datum/signal/subspace/messaging/pda/signal = new(src, list(
 		"name" = "[owner]",
 		"job" = "[ownjob]",
@@ -677,6 +674,9 @@ GLOBAL_LIST_EMPTY(PDAs)
 	// If it didn't reach, note that fact
 	if (!signal.data["done"])
 		to_chat(user, "<span class='notice'>ERROR: Server isn't responding.</span>")
+		return
+	if(CHAT_FILTER_CHECK(message))
+		to_chat(user, "<span class='warning'>ERROR: Prohibited word(s) detected in message.</span>")
 		return
 
 	var/target_text = signal.format_target()
@@ -743,13 +743,13 @@ GLOBAL_LIST_EMPTY(PDAs)
 /obj/item/pda/proc/create_message(mob/living/U, obj/item/pda/P)
 	send_message(U,list(P))
 
-/obj/item/pda/AltClick(mob/user)
+/obj/item/pda/AltClick()
 	..()
 
 	if(id)
-		remove_id(user)
+		remove_id()
 	else
-		remove_pen(user)
+		remove_pen()
 
 /obj/item/pda/CtrlClick(mob/user)
 	..()
@@ -776,7 +776,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 	set src in usr
 
 	if(id)
-		remove_id(usr)
+		remove_id()
 	else
 		to_chat(usr, "<span class='warning'>This PDA does not have an ID in it!</span>")
 
@@ -837,7 +837,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 /obj/item/pda/proc/id_check(mob/user, obj/item/card/id/I)
 	if(!I)
 		if(id && (src in user.contents))
-			remove_id(user)
+			remove_id()
 			return TRUE
 		else
 			var/obj/item/card/id/C = user.get_active_held_item()

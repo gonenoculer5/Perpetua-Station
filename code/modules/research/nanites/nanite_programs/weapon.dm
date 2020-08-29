@@ -50,12 +50,9 @@
 	rogue_types = list(/datum/nanite_program/necrotic)
 
 /datum/nanite_program/aggressive_replication/active_effect()
-//austation begin -- Organises brute and regen rates better, buffs the "extra regen" from being 200th of nanite volume to being 100th of nanite volume (doubles growth rate)
-	var/extra_regen = round(nanites.nanite_volume / 100, 0.1)
+	var/extra_regen = round(nanites.nanite_volume / 200, 0.1)
 	nanites.adjust_nanites(null, extra_regen)
-	var/brute_loss = round(nanites.nanite_volume / 200, 0.1)
-	host_mob.adjustBruteLoss(brute_loss, TRUE)
-//austation end
+	host_mob.adjustBruteLoss(extra_regen / 2, TRUE)
 
 /datum/nanite_program/meltdown
 	name = "Meltdown"

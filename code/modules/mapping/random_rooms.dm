@@ -632,7 +632,6 @@
 	centerspawner = FALSE
 	template_height = 4
 	template_width = 5
-	weight = 6
 	stock = 2 //because i hate you
 
 /datum/map_template/random_room/sk_rdm076
@@ -886,7 +885,7 @@
 /datum/map_template/random_room/sk_rdm104
 	name = "pill lottery"
 	room_id = "sk_rdm104_pills"
-	mappath = "_maps/RandomRooms/5x3/sk_rdm104_pills.dmm"
+	mappath = "_maps/RandomRooms/5x3/sk_rdm104_pills"
 	centerspawner = FALSE
 	template_height = 3
 	template_width = 5
@@ -895,16 +894,8 @@
 /datum/map_template/random_room/sk_rdm105
 	name = "biohazard exclusion zone"
 	room_id = "sk_rdm105_phage"
-	mappath = "_maps/RandomRooms/10x5/sk_rdm105_phage.dmm"
+	mappath = "_maps/RandomRooms/10x5/sk_rdm105_phage"
 	centerspawner = FALSE
 	template_height = 5
 	template_width = 10
 	weight = 3
-
-/datum/map_template/random_room/sk_rdm106
-	name = "Psychiatrist's Office"
-	room_id = "sk_rdm106_sanitarium"
-	mappath = "_maps/RandomRooms/10x10/sk_rdm106_sanitarium.dmm"
-	centerspawner = FALSE
-	template_height = 10
-	template_width = 10

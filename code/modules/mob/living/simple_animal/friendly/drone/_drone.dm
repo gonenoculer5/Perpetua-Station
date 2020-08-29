@@ -132,7 +132,7 @@
 		to_chat(src, "[flavortext]")
 
 	if(!picked)
-		pickVisualAppearenceAustation() //austation begin -- Replaces pickVisualAppearence() with pickVisualAppearenceAustation
+		pickVisualAppearence()
 
 /mob/living/simple_animal/drone/auto_deadmin_on_login()
 	if(!client?.holder)

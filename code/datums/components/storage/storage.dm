@@ -500,10 +500,6 @@
 /datum/component/storage/proc/mousedrop_onto(datum/source, atom/over_object, mob/M)
 	set waitfor = FALSE
 	. = COMPONENT_NO_MOUSEDROP
-	var/atom/A = parent
-	if(istype(A, /obj/item))
-		var/obj/item/I = A
-		I.remove_outline()	//Removes the outline when we drag
 	if(!ismob(M))
 		return
 	if(!over_object)
@@ -512,6 +508,7 @@
 		return
 	if(M.incapacitated() || !M.canUseStorage())
 		return
+	var/atom/A = parent
 	A.add_fingerprint(M)
 	// this must come before the screen objects only block, dunno why it wasn't before
 	if(over_object == M)

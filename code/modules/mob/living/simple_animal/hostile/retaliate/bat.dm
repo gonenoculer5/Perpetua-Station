@@ -15,7 +15,9 @@
 	health = 15
 	spacewalk = TRUE
 	see_in_dark = 10
-	melee_damage = 6
+	harm_intent_damage = 6
+	melee_damage_lower = 6
+	melee_damage_upper = 5
 	attacktext = "bites"
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 1)
 	pass_flags = PASSTABLE

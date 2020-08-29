@@ -16,7 +16,9 @@
 	speed = 3
 	maxHealth = 75
 	health = 75
-	melee_damage = 0
+	harm_intent_damage = 5
+	melee_damage_lower = 0
+	melee_damage_upper = 0
 	attacktext = "lashes out at"
 	speak_emote = list("telepathically cries")
 	attack_sound = 'sound/weapons/pierce.ogg'
@@ -70,7 +72,9 @@
 	maxHealth = 1
 	health = 1
 	movement_type = FLYING
-	melee_damage = 2
+	harm_intent_damage = 5
+	melee_damage_lower = 2
+	melee_damage_upper = 2
 	attacktext = "slashes"
 	speak_emote = list("telepathically cries")
 	attack_sound = 'sound/weapons/pierce.ogg'
@@ -97,7 +101,8 @@
 	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
 	mouse_opacity = MOUSE_OPACITY_ICON
 	obj_damage = 60
-	melee_damage = 15
+	melee_damage_lower = 15
+	melee_damage_upper = 15
 	attacktext = "lashes out at"
 	speak_emote = list("echoes")
 	attack_sound = 'sound/weapons/pierce.ogg'
@@ -162,7 +167,9 @@
 	vision_range = 10
 	maxHealth = 1
 	health = 5
-	melee_damage = 12
+	harm_intent_damage = 5
+	melee_damage_lower = 12
+	melee_damage_upper = 12
 	attacktext = "bites"
 	speak_emote = list("echoes")
 	attack_sound = 'sound/weapons/pierce.ogg'
@@ -219,7 +226,8 @@
 	icon_dead = "legion"
 	health = 450
 	maxHealth = 450
-	melee_damage = 20
+	melee_damage_lower = 20
+	melee_damage_upper = 20
 	anchored = FALSE
 	AIStatus = AI_ON
 	stop_automated_movement = FALSE
@@ -354,9 +362,8 @@
 			mask = /obj/item/clothing/mask/breath
 		if("Cultist")
 			uniform = /obj/item/clothing/under/costume/roman
-			suit = /obj/item/clothing/suit/cultrobes
+			suit = /obj/item/clothing/suit/hooded/cultrobes
 			suit_store = /obj/item/tome
-			shoes = /obj/item/clothing/shoes/cult
 			r_pocket = /obj/item/restraints/legcuffs/bola/cult
 			l_pocket = /obj/item/melee/cultblade/dagger
 			glasses =  /obj/item/clothing/glasses/hud/health/night/cultblind

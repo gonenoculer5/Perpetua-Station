@@ -122,8 +122,14 @@
 	. = ..()
 	if(. && ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if(H.Togglewings())
-			addtimer(CALLBACK(H,/mob/living/carbon/human.proc/Togglewings), wing_time)
+		var/open = FALSE
+		if(H.dna.features["wings"] != "None")
+			if("wingsopen" in H.dna.species.mutant_bodyparts)
+				open = TRUE
+				H.CloseWings()
+			else
+				H.OpenWings()
+			addtimer(CALLBACK(H, open ? /mob/living/carbon/human.proc/OpenWings : /mob/living/carbon/human.proc/CloseWings), wing_time)
 
 /datum/emote/living/flap/aflap
 	key = "aflap"

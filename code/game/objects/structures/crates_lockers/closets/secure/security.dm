@@ -240,7 +240,7 @@
 	..()
 	for(var/i in 1 to 4)
 		new /obj/item/storage/backpack/duffelbag/sec/deputy(src)
-	
+
 /obj/structure/closet/secure_closet/injection
 	name = "lethal injections"
 	req_access = list(ACCESS_HOS)
@@ -266,6 +266,7 @@
 	..()
 	new /obj/item/clothing/under/rank/prisoner( src )
 	new /obj/item/clothing/shoes/sneakers/orange( src )
+	new /obj/item/clothing/suit/hooded/wintercoat/sec/pris( src )
 
 /obj/structure/closet/secure_closet/courtroom
 	name = "courtroom locker"

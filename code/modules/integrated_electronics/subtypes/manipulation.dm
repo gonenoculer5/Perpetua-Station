@@ -93,9 +93,9 @@
 
 	mode = mode1.data
 	if(assembly)
-		if(isnum_safe(xo.data))
+		if(isnum(xo.data))
 			xo.data = round(xo.data, 1)
-		if(isnum_safe(yo.data))
+		if(isnum(yo.data))
 			yo.data = round(yo.data, 1)
 
 		var/turf/T = get_turf(assembly)
@@ -160,7 +160,7 @@
 			return
 		if(assembly.loc == T) // Check if we're held by someone.  If the loc is the floor, we're not held.
 			var/datum/integrated_io/wanted_dir = inputs[1]
-			if(isnum_safe(wanted_dir.data))
+			if(isnum(wanted_dir.data))
 				if(step(assembly, wanted_dir.data))
 					activate_pin(2)
 					return
@@ -224,7 +224,7 @@
 	if(attached_grenade && !attached_grenade.active)
 		var/datum/integrated_io/detonation_time = inputs[1]
 		var/dt
-		if(isnum_safe(detonation_time.data) && detonation_time.data > 0)
+		if(isnum(detonation_time.data) && detonation_time.data > 0)
 			dt = CLAMP(detonation_time.data, 1, 12)*10
 		else
 			dt = 15

@@ -89,6 +89,7 @@
 	H.equip_to_slot_or_del(I,SLOT_IN_BACKPACK)
 	var/datum/martial_art/psychotic_brawling/junkie = new //this fits well, but i'm unsure about it, cuz this martial art is so fucking rng dependent i swear...
 	junkie.teach(H)
+<<<<<<< HEAD
 	ADD_TRAIT(H, TRAIT_APPRAISAL, JOB_TRAIT)
 
 
@@ -109,3 +110,6 @@
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/suit/black
 	shoes = /obj/item/clothing/shoes/laceup
+=======
+	ADD_TRAIT(H, TRAIT_APPRAISAL, JOB_TRAIT)
+>>>>>>> parent of 02eb25dbf0... Merge

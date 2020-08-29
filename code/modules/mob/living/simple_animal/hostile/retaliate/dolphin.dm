@@ -21,7 +21,9 @@
 	spacewalk = TRUE
 
 	environment_smash = 0
-	melee_damage = 15
+	harm_intent_damage = 8
+	melee_damage_lower = 15
+	melee_damage_upper = 15
 	pass_flags = PASSTABLE
 	attacktext = "bites"
 	attack_sound = 'sound/weapons/bite.ogg'

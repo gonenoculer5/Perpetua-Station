@@ -289,18 +289,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/wood,
 /area/template_noop)
-"O" = (
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plasteel/dark,
-/area/template_noop)
-"R" = (
-/obj/effect/decal/cleanable/vomit/old,
-/turf/open/floor/plasteel/dark,
-/area/template_noop)
-"V" = (
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/wood,
-/area/template_noop)
 
 (1,1,1) = {"
 a
@@ -311,9 +299,9 @@ F
 "}
 (2,1,1) = {"
 b
-R
+k
 j
-O
+k
 G
 "}
 (3,1,1) = {"
@@ -333,7 +321,7 @@ z
 (5,1,1) = {"
 e
 n
-V
+n
 r
 n
 "}
@@ -361,7 +349,7 @@ n
 (9,1,1) = {"
 e
 n
-V
+n
 n
 m
 "}

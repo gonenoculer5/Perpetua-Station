@@ -44,7 +44,8 @@ Difficulty: Medium
 	friendly = "stares down"
 	speak_emote = list("roars")
 	armour_penetration = 40
-	melee_damage = 40
+	melee_damage_lower = 40
+	melee_damage_upper = 40
 	speed = 5
 	move_to_delay = 5
 	ranged = TRUE
@@ -570,7 +571,8 @@ obj/effect/temp_visual/fireball
 	health = 200
 	faction = list("neutral")
 	obj_damage = 80
-	melee_damage = 30
+	melee_damage_upper = 30
+	melee_damage_lower = 30
 	mouse_opacity = MOUSE_OPACITY_ICON
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 1, CLONE = 1, STAMINA = 0, OXY = 1)
 	loot = list()
@@ -602,7 +604,8 @@ obj/effect/temp_visual/fireball
 	icon_living = "spacedragon"
 	icon_dead = "spacedragon_dead"
 	obj_damage = 80
-	melee_damage = 35
+	melee_damage_upper = 35
+	melee_damage_lower = 35
 	speed = 0
 	mouse_opacity = MOUSE_OPACITY_ICON
 	loot = list()

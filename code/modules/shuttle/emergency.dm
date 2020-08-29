@@ -206,7 +206,7 @@
 ///////// There are some announcement sound changes for austation below, unlikely to cause conflicts but they've been labeled in the event that something breaks ///////////
 
 /obj/docking_port/mobile/emergency/request(obj/docking_port/stationary/S, area/signalOrigin, reason, redAlert, set_coefficient=null)
-	if(!isnum_safe(set_coefficient))
+	if(!isnum(set_coefficient))
 		var/security_num = seclevel2num(get_security_level())
 		switch(security_num)
 			if(SEC_LEVEL_GREEN)
@@ -301,9 +301,7 @@
 	set waitfor = FALSE
 	if(!SSdbcore.Connect())
 		return
-	var/datum/DBQuery/query_round_shuttle_name = SSdbcore.NewQuery({"
-		UPDATE [format_table_name("round")] SET shuttle_name = :name WHERE id = :round_id
-	"}, list("name" = name, "round_id" = GLOB.round_id))
+	var/datum/DBQuery/query_round_shuttle_name = SSdbcore.NewQuery("UPDATE [format_table_name("round")] SET shuttle_name = '[name]' WHERE id = [GLOB.round_id]")
 	query_round_shuttle_name.Execute()
 	qdel(query_round_shuttle_name)
 

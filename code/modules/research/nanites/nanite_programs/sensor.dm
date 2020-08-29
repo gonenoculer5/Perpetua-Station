@@ -182,11 +182,9 @@
 	can_rule = TRUE
 	var/spent = FALSE
 
-//austation begin -- Adds brain damage and dermal damage (brute + burn) as a value that can be detected explicity
-#define DERMAL "dermal"
 /datum/nanite_program/sensor/damage/register_extra_settings()
 	. = ..()
-	extra_settings[NES_DAMAGE_TYPE] = new /datum/nanite_extra_setting/type(BRUTE, list(BRUTE, BURN, TOX, OXY, CLONE, BRAIN, DERMAL))
+	extra_settings[NES_DAMAGE_TYPE] = new /datum/nanite_extra_setting/type(BRUTE, list(BRUTE, BURN, TOX, OXY, CLONE))
 	extra_settings[NES_DAMAGE] = new /datum/nanite_extra_setting/number(50, 0, 500)
 	extra_settings[NES_DIRECTION] = new /datum/nanite_extra_setting/boolean(TRUE, "Above", "Below")
 
@@ -208,10 +206,6 @@
 			damage_amt = host_mob.getOxyLoss()
 		if(CLONE)
 			damage_amt = host_mob.getCloneLoss()
-		if(BRAIN)
-			damage_amt = host_mob.getOrganLoss(ORGAN_SLOT_BRAIN)
-		if(DERMAL)
-			damage_amt = host_mob.getBruteLoss() + host_mob.getFireLoss()
 
 	if(check_above)
 		if(damage_amt >= damage.get_value())
@@ -228,8 +222,6 @@
 	else
 		spent = FALSE
 		return FALSE
-#undef DERMAL
-//austation end
 
 /datum/nanite_program/sensor/damage/make_rule(datum/nanite_program/target)
 	var/datum/nanite_rule/damage/rule = new(target)

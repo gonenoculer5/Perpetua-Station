@@ -8,7 +8,6 @@
 	flags_inv = 0
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	strip_delay = 80
-	clothing_flags = SNUG_FIT // prevents bypassing the strip delay
 
 /obj/item/clothing/head/powdered_wig
 	name = "powdered wig"
@@ -67,7 +66,6 @@
 	item_state = "syndicate-helm-black-red"
 	desc = "A plastic replica of a Syndicate agent's space helmet. You'll look just like a real murderous Syndicate agent in this! This is a toy, it is not made for use in space!"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/cueball
 	name = "cueball helmet"
@@ -76,7 +74,6 @@
 	item_state="cueball"
 	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/snowman
 	name = "Snowman Head"
@@ -85,7 +82,6 @@
 	item_state = "snowman_h"
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/justice
 	name = "justice hat"
@@ -94,7 +90,6 @@
 	item_state = "justicered"
 	flags_inv = HIDEHAIR|HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/justice/blue
 	icon_state = "justiceblue"
@@ -116,7 +111,6 @@
 	name = "rabbit ears"
 	desc = "Wearing these makes you look useless, and only good for your sex appeal."
 	icon_state = "bunny"
-	clothing_flags = SNUG_FIT
 	dynamic_hair_suffix = ""
 
 	dog_fashion = /datum/dog_fashion/head/rabbit
@@ -142,7 +136,7 @@
 	if(!ishuman(user))
 		return
 	if(slot == SLOT_HEAD)
-		user.grant_language(/datum/language/piratespeak/, TRUE, TRUE, LANGUAGE_HAT)
+		user.grant_language(/datum/language/piratespeak/)
 		to_chat(user, "You suddenly know how to speak like a pirate!")
 
 /obj/item/clothing/head/pirate/dropped(mob/user)
@@ -150,7 +144,7 @@
 		return
 	var/mob/living/carbon/human/H = user
 	if(H.get_item_by_slot(SLOT_HEAD) == src)
-		user.remove_language(/datum/language/piratespeak/, TRUE, TRUE, LANGUAGE_HAT)
+		user.remove_language(/datum/language/piratespeak/)
 		to_chat(user, "You can no longer speak like a pirate.")
 
 /obj/item/clothing/head/pirate/captain
@@ -184,7 +178,6 @@
 	icon_state = "chickenhead"
 	item_state = "chickensuit"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/griffin
 	name = "griffon head"
@@ -192,7 +185,6 @@
 	icon_state = "griffinhat"
 	item_state = "griffinhat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/bearpelt
 	name = "bear pelt hat"
@@ -206,7 +198,6 @@
 	item_state = "xenos_helm"
 	desc = "A helmet made out of chitinous alien hide."
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/fedora
 	name = "fedora"
@@ -312,7 +303,6 @@
 	desc = "A paper sack with crude holes cut out for eyes. Useful for hiding one's identity or ugliness."
 	icon_state = "papersack"
 	flags_inv = HIDEHAIR|HIDEFACE|HIDEEARS
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/papersack/smiley
 	name = "paper sack hat"
@@ -343,7 +333,6 @@
 	desc = "When everything's going to crab, protecting your head is the best choice."
 	icon_state = "lobster_hat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/drfreezehat
 	name = "doctor freeze's wig"

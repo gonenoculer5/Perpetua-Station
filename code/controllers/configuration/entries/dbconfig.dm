@@ -48,3 +48,4 @@
 	config_entry_value = 50
 	min_val = 1
 
+/datum/config_entry/flag/bsql_debug

@@ -4,7 +4,6 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel,
 /area/template_noop)
 "b" = (

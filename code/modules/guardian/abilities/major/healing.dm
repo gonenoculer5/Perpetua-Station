@@ -24,9 +24,9 @@
 		if(isliving(target))
 			var/mob/living/L = target
 			guardian.do_attack_animation(L)
-			var/heals = -(master_stats.potential * 0.8 + 3)
+			var/heals = -(master_stats.potential * 1.5)
 			if(!guardian.is_deployed())
-				heals = min(heals * 0.5, -2)
+				heals = max(heals * 0.5, 2)
 			L.adjustBruteLoss(heals)
 			L.adjustFireLoss(heals)
 			L.adjustOxyLoss(heals)

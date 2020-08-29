@@ -26,10 +26,8 @@
 	var/bomb_active = FALSE // If the bomb is counting down.
 	var/bomb_defused = TRUE // If the bomb is inert.
 	var/bomb_timer = 1 // How long before blowing the bomb.
-	/// Min bomb timer allowed
-	var/bomb_timer_min = 1
-	/// Max bomb timer allower
-	var/bomb_timer_max = 10
+	var/const/BOMB_TIMER_MIN = 1
+	var/const/BOMB_TIMER_MAX = 10
 
 /obj/item/pizzabox/Initialize()
 	. = ..()
@@ -126,12 +124,8 @@
 				update_icon()
 				return
 			else
-				bomb_timer = input(user, "Set the [bomb] timer from [bomb_timer_min] to [bomb_timer_max].", bomb, bomb_timer) as num|null
-
-				if (isnull(bomb_timer))
-					return
-
-				bomb_timer = clamp(CEILING(bomb_timer / 2, 1), bomb_timer_min, bomb_timer_max)
+				bomb_timer = input(user, "Set the [bomb] timer from [BOMB_TIMER_MIN] to [BOMB_TIMER_MAX].", bomb, bomb_timer) as num
+				bomb_timer = CLAMP(CEILING(bomb_timer / 2, 1), BOMB_TIMER_MIN, BOMB_TIMER_MAX)
 				bomb_defused = FALSE
 
 				log_bomber(user, "has trapped a", src, "with [bomb] set to [bomb_timer * 2] seconds")

@@ -21,9 +21,9 @@
 	name = "Experimental Disease"
 	copy_type = /datum/disease/advance
 	var/randomname = TRUE
-	var/datum/symptom/setsymptom = null
+	var/datum/symptom/specialsymptom = null
 
-/datum/disease/advance/random/New(max_symptoms, max_level = 9, var/datum/symptom/specialsymptom = setsymptom)
+/datum/disease/advance/random/New(max_symptoms, max_level = 9)
 	if(!max_symptoms)
 		max_symptoms = (2 + rand(1, (VIRUS_SYMPTOM_LIMIT-2)))
 	if(specialsymptom)
@@ -52,15 +52,10 @@
 
 /datum/disease/advance/random/macrophage
 	name = "Unknown Disease"
-	setsymptom = /datum/symptom/macrophage
+	specialsymptom = /datum/symptom/macrophage
 
 
 /datum/disease/advance/random/necropolis
 	name = "Necropolis Seed"
-	setsymptom = /datum/symptom/necroseed
-	randomname = FALSE
-
-/datum/disease/advance/random/blob // had to do it this way due to an odd glitch
-	name = "Blob Spores"
-	setsymptom = /datum/symptom/blobspores
+	specialsymptom = /datum/symptom/necroseed
 	randomname = FALSE

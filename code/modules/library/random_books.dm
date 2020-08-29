@@ -10,83 +10,82 @@
 
 /obj/item/book/random
 	icon_state = "random_book"
-	/// The category of books to pick from when creating this book.
-	var/random_category = null
-	/// If this book has already been 'generated' yet.
-	var/random_loaded = FALSE
+	var/amount = 1
+	var/category = null
 
-/obj/item/book/random/Initialize(mapload)
-	. = ..()
-	icon_state = "book[rand(1,8)]"
+/obj/item/book/random/Initialize()
+	..()
+	return INITIALIZE_HINT_LATELOAD
 
-/obj/item/book/random/attack_self()
-	if(!random_loaded)
-		create_random_books(1, loc, TRUE, random_category, src)
-		random_loaded = TRUE
-	return ..()
+/obj/item/book/random/LateInitialize()
+	create_random_books(amount, src.loc, TRUE, category)
+	qdel(src)
+
+/obj/item/book/random/triple
+	amount = 3
 
 /obj/structure/bookcase/random
-	load_random_books = TRUE
-	books_to_load = 2
+	var/category = null
+	var/book_count = 2
 	icon_state = "random_bookcase"
+	anchored = TRUE
+	state = 2
 
 /obj/structure/bookcase/random/Initialize(mapload)
 	. = ..()
-	if(books_to_load && isnum_safe(books_to_load))
-		books_to_load += pick(-1,-1,0,1,1)
+	if(book_count && isnum(book_count))
+		book_count += pick(-1,-1,0,1,1)
+		. = INITIALIZE_HINT_LATELOAD
 	update_icon()
 
-/proc/create_random_books(amount, location, fail_loud = FALSE, category = null, obj/item/book/existing_book)
+/obj/structure/bookcase/random/LateInitialize()
+	create_random_books(book_count, src, FALSE, category)
+
+/proc/create_random_books(amount = 2, location, fail_loud = FALSE, category = null)
 	. = list()
-	if(!isnum_safe(amount) || amount<1)
+	if(!isnum(amount) || amount<1)
 		return
 	if (!SSdbcore.Connect())
-		if(existing_book && (fail_loud || prob(5)))
-			existing_book.author = "???"
-			existing_book.title = "Strange book"
-			existing_book.name = "Strange book"
-			existing_book.dat = "There once was a book from Nantucket<br>But the database failed us, so f*$! it.<br>I tried to be good to you<br>Now this is an I.O.U<br>If you're feeling entitled, well, stuff it!<br><br><font color='gray'>~</font>"
+		if(fail_loud || prob(5))
+			var/obj/item/paper/P = new(location)
+			P.info = "There once was a book from Nantucket<br>But the database failed us, so f*$! it.<br>I tried to be good to you<br>Now this is an I.O.U<br>If you're feeling entitled, well, stuff it!<br><br><font color='gray'>~</font>"
+			P.update_icon()
 		return
 	if(prob(25))
 		category = null
-	var/datum/DBQuery/query_get_random_books = SSdbcore.NewQuery({"
-		SELECT author, title, content
-		FROM [format_table_name("library")]
-		WHERE isnull(deleted) AND (:category IS NULL OR category = :category)
-		ORDER BY rand() LIMIT :limit
-	"}, list("category" = category, "limit" = amount))
+	var/c = category? " AND category='[sanitizeSQL(category)]'" :""
+	var/datum/DBQuery/query_get_random_books = SSdbcore.NewQuery("SELECT * FROM [format_table_name("library")] WHERE isnull(deleted)[c] GROUP BY title ORDER BY rand() LIMIT [amount];") // isdeleted copyright (c) not me
 	if(query_get_random_books.Execute())
 		while(query_get_random_books.NextRow())
-			var/obj/item/book/B
-			B = existing_book ? existing_book : new(location)
-			B.author	=	query_get_random_books.item[1]
-			B.title		=	query_get_random_books.item[2]
-			B.dat		=	query_get_random_books.item[3]
+			var/obj/item/book/B = new(location)
+			. += B
+			B.author	=	query_get_random_books.item[2]
+			B.title		=	query_get_random_books.item[3]
+			B.dat		=	query_get_random_books.item[4]
 			B.name		=	"Book: [B.title]"
-			if(!existing_book)
-				B.icon_state=	"book[rand(1,8)]"
+			B.icon_state=	"book[rand(1,8)]"
 	qdel(query_get_random_books)
 
 /obj/structure/bookcase/random/fiction
 	name = "bookcase (Fiction)"
-	random_category = "Fiction"
+	category = "Fiction"
 /obj/structure/bookcase/random/nonfiction
 	name = "bookcase (Non-Fiction)"
-	random_category = "Non-fiction"
+	category = "Non-fiction"
 /obj/structure/bookcase/random/religion
 	name = "bookcase (Religion)"
-	random_category = "Religion"
+	category = "Religion"
 /obj/structure/bookcase/random/adult
 	name = "bookcase (Adult)"
-	random_category = "Adult"
+	category = "Adult"
 
 /obj/structure/bookcase/random/reference
 	name = "bookcase (Reference)"
-	random_category = "Reference"
+	category = "Reference"
 	var/ref_book_prob = 20
 
 /obj/structure/bookcase/random/reference/Initialize(mapload)
 	. = ..()
-	while(books_to_load > 0 && prob(ref_book_prob))
-		books_to_load--
+	while(book_count > 0 && prob(ref_book_prob))
+		book_count--
 		new /obj/item/book/manual/random(src)

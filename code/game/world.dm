@@ -10,7 +10,9 @@ GLOBAL_VAR(restart_counter)
 		call(EXTOOLS, "maptick_initialize")()
 
 	//Early profile for auto-profiler - will be stopped on profiler init if necessary.
+#if DM_VERSION >= 513 && DM_BUILD >= 1506
 	world.Profile(PROFILE_START)
+#endif
 
 	log_world("World loaded at [time_stamp()]!")
 
@@ -34,7 +36,6 @@ GLOBAL_VAR(restart_counter)
 	SSdbcore.CheckSchemaVersion()
 	SSdbcore.SetRoundID()
 	SetupLogs()
-	load_poll_data()
 
 	populate_gear_list()
 

@@ -67,6 +67,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = TRUE
 	delete_after_roundstart = FALSE
 
+/obj/effect/landmark/start/prisoner
+	name = "Prisoner"
+	icon_state = "Prisoner"
+
 /obj/effect/landmark/start/janitor
 	name = "Janitor"
 	icon_state = "Janitor"
@@ -235,10 +239,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Debtor"
 	job = "Debtor"
 	
-/obj/effect/landmark/start/randommaint/shrink
-	name = "Psychiatrist"
-	job = "Psychiatrist"
-
 //Department Security spawns
 
 /obj/effect/landmark/start/depsec

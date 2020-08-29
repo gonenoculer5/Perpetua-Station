@@ -16,7 +16,8 @@
 	response_harm = "kicks"
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
 	gold_core_spawnable = FRIENDLY_SPAWN
-	melee_damage = 18 //why the fuck does it do this much damage
+	melee_damage_lower = 18
+	melee_damage_upper = 18
 	health = 50
 	maxHealth = 50
 	speed = 10

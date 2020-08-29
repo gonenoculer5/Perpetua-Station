@@ -1,6 +1,7 @@
 //Protector
 /mob/living/simple_animal/hostile/guardian/protector
-	melee_damage = 15
+	melee_damage_lower = 15
+	melee_damage_upper = 15
 	range = 15 //worse for it due to how it leashes
 	damage_coeff = list(BRUTE = 0.4, BURN = 0.4, TOX = 0.4, CLONE = 0.4, STAMINA = 0, OXY = 0.4)
 	playstyle_string = "<span class='holoparasite'>As a <b>protector</b> type you cause your summoner to leash to you instead of you leashing to them and have two modes; Combat Mode, where you do and take medium damage, and Protection Mode, where you do and take almost no damage, but move slightly slower.</span>"
@@ -35,7 +36,8 @@
 	cooldown = world.time + 10
 	if(toggle)
 		cut_overlays()
-		melee_damage = initial(melee_damage)
+		melee_damage_lower = initial(melee_damage_lower)
+		melee_damage_upper = initial(melee_damage_upper)
 		speed = initial(speed)
 		damage_coeff = list(BRUTE = 0.4, BURN = 0.4, TOX = 0.4, CLONE = 0.4, STAMINA = 0, OXY = 0.4)
 		to_chat(src, "<span class='danger'><B>You switch to combat mode.</span></B>")
@@ -45,7 +47,8 @@
 		if(guardiancolor)
 			shield_overlay.color = guardiancolor
 		add_overlay(shield_overlay)
-		melee_damage = 2
+		melee_damage_lower = 2
+		melee_damage_upper = 2
 		speed = 1
 		damage_coeff = list(BRUTE = 0.05, BURN = 0.05, TOX = 0.05, CLONE = 0.05, STAMINA = 0, OXY = 0.05) //damage? what's damage?
 		to_chat(src, "<span class='danger'><B>You switch to protection mode.</span></B>")

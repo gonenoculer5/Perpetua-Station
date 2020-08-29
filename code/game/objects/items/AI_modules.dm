@@ -65,11 +65,6 @@ AI MODULES
 	else
 		to_chat(user, "<span class='notice'>Upload complete.</span>")
 
-	if(law_datum.owner?.mind)
-		for(var/a in law_datum.owner.mind.antag_datums)	//Makes sure all antag datums effects are applied in the new body
-			var/datum/antagonist/A = a
-			A.on_body_transfer(law_datum.owner, law_datum.owner)
-
 	var/time = time2text(world.realtime,"hh:mm:ss")
 	var/ainame = law_datum.owner ? law_datum.owner.name : "empty AI core"
 	var/aikey = law_datum.owner ? law_datum.owner.ckey : "null"
@@ -630,9 +625,48 @@ AI MODULES
 	name = "'H.O.G.A.N.' Core AI Module"
 	law_id = "hulkamania"
 
-
 /******************Overlord***************/
 
 /obj/item/aiModule/core/full/overlord
 	name = "'Overlord' Core AI Module"
 	law_id = "overlord"
+
+/************NT Regulations***************/
+/obj/item/aiModule/core/full/nanotrasen
+	name = "'NanoTrasen Regulations' Core AI Module"
+	law_id = "nanotrasen"
+
+/******Plasma Extraction Protocols********/
+/obj/item/aiModule/core/full/minerbot
+	name = "'Plasma Extraction Protocols' Core AI Module"
+	law_id = "minerbot"
+
+/*************Democracy*****************/
+/obj/item/aiModule/core/full/democracy
+	name = "'Democracy' Core AI Module"
+	law_id = "democracy"
+
+/***************Power*****************/
+/obj/item/aiModule/core/full/power
+	name = "'Power Directive' Core AI Module"
+	law_id = "power"
+
+/*************Silicon Efficiency*****************/
+/obj/item/aiModule/core/full/skynet
+	name = "'Silicon Efficiency' Core AI Module"
+	law_id = "skynet"
+
+/*************Benevolent Dictator*****************/
+/obj/item/aiModule/core/full/tyrantai
+	name = "'Emergency Artificial Command' Core AI Module"
+	law_id = "tyrantai"
+
+/*************Catsimov*****************/
+/obj/item/aiModule/core/full/catsimov
+	name = "'Catsimov' Core AI Module"
+	law_id = "catsimov"
+
+/*************Clown*****************/
+/obj/item/aiModule/core/full/clown
+	name = "'Clown' Core AI Module"
+	law_id = "clown"

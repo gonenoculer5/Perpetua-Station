@@ -20,8 +20,10 @@
 	speed = 3
 	maxHealth = 200
 	health = 200
+	harm_intent_damage = 5
 	obj_damage = 60
-	melee_damage = 12
+	melee_damage_lower = 12
+	melee_damage_upper = 12
 	attacktext = "bites into"
 	a_intent = INTENT_HARM
 	speak_emote = list("chitters")
@@ -67,7 +69,8 @@
 	icon_dead = "watcher_dead"
 	pixel_x = -10
 	throw_message = "bounces harmlessly off of"
-	melee_damage = 15
+	melee_damage_lower = 15
+	melee_damage_upper = 15
 	attacktext = "impales"
 	a_intent = INTENT_HARM
 	speak_emote = list("telepathically cries")
